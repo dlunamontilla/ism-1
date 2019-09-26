@@ -162,21 +162,38 @@ header, section, article, footer {
 }
 
 .menu-horizontal {
-  min-height: 50px;
+  min-height: 60px;
   color: white;
   display: flex;
+  justify-content: center;
   list-style: none;
 }
 .menu-horizontal--item, .menu-horizontal--enlace {
   display: flex;
 }
-.menu-horizontal--item:not(:first-of-type) {
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
+.menu-horizontal--item {
+  position: relative;
+  flex-shrink: 1;
+  justify-content: center;
+}
+.menu-horizontal--item:not(:first-of-type)::before {
+  content: "";
+  display: block;
+  margin: auto;
+  left: 0;
+  right: auto;
+  top: 0;
+  bottom: 0;
+  height: 50%;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
 }
 .menu-horizontal--enlace {
   align-items: center;
-  padding: 0 10px;
+  padding: 0 15px;
   color: white;
+  justify-content: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
 }
 .menu-horizontal--enlace:hover {
   color: white;

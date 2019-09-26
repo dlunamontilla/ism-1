@@ -4,6 +4,7 @@
     color: white;
 
     display: flex;
+    justify-content: center;
     list-style:none;
 
     &--item,
@@ -12,14 +13,35 @@
     }
 
     &--item {
+      position: relative;
+
       &:not(:first-of-type) {
-        border-left: 1px solid rgba(white, 0.3);
+        &::before {
+          content: "";
+          display: block;
+          margin: auto;
+          left: 0; right: auto;
+          top: 0; bottom: 0;
+          height: 50%;
+          border-left: 1px solid rgba(white, 0.2);
+        }
       }
+
+      flex-shrink: 1;
+      justify-content: center;
     }
+
     &--enlace {
       align-items: center;
-      padding: 0 10px;
+      padding: 0 15px;
       color: white;
+      justify-content: center;
+
+      font: {
+        size: 0.9rem;
+      }
+
+      text-transform: uppercase;
 
       &:hover {
         color: white;

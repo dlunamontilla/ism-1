@@ -8,7 +8,9 @@ $header = <<<HTML
     <img class="banner__imagen" src="vista/images/Web-Elementos_0067_Rectángulo-2-copia.png" alt="Home">
   </div>
 
-  $menuHorizontal
+  <div class="default">
+    $menuHorizontal
+  </div>
 
 </header>
 
