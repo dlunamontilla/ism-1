@@ -46,6 +46,10 @@ a:not([class]):hover {
   min-height: 100vh;
 }
 
+.height {
+  height: 100%;
+}
+
 hr {
   margin: 20px auto 30px;
   border: 0;
@@ -159,6 +163,47 @@ header, section, article, footer {
   object-position: center top;
   width: 100%;
   height: 100%;
+}
+
+.logo {
+  position: absolute;
+  margin: auto;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.logo__img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+.logo__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo__p {
+  color: white;
+  margin: 0;
+  text-transform: uppercase;
+}
+.logo__p:first-of-type {
+  margin-top: 40px;
+}
+.logo__p--small {
+  font-size: 1.3rem;
+}
+.logo__p--big {
+  font-size: 2rem;
 }
 
 .menu-horizontal {
