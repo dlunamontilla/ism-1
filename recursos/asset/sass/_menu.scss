@@ -34,17 +34,18 @@
     &--enlace {
       align-items: center;
       padding: 0 15px;
-      color: white;
+      color: $color-base;
       justify-content: center;
-
+      
       font: {
         size: 0.9rem;
+        font-weight: bold;
       }
 
       text-transform: uppercase;
 
       &:hover {
-        color: white;
+        color: $color-base;
         text-decoration: none;
       }
     }

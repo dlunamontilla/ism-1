@@ -235,13 +235,14 @@ header, section, article, footer {
 .menu-horizontal--enlace {
   align-items: center;
   padding: 0 15px;
-  color: white;
+  color: #0d002f;
   justify-content: center;
   font-size: 0.9rem;
+  font-font-weight: bold;
   text-transform: uppercase;
 }
 .menu-horizontal--enlace:hover {
-  color: white;
+  color: #0d002f;
   text-decoration: none;
 }
 

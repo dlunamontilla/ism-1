@@ -6,7 +6,7 @@ $header = <<<HTML
   
   <!-- $carousel -->
   <div class="banner">
-    <img class="banner__imagen" src="vista/images/Web-Elementos_0067_Rectángulo-2-copia.png" alt="Home">
+    <img class="banner__imagen" src="vista/images/0076__MG_0524.jpg" alt="Home">
   </div>
   
   <div class="default">
