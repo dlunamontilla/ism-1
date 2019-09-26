@@ -1,0 +1,30 @@
+.menu {
+  &-horizontal {
+    min-height: $menu-height;
+    color: white;
+
+    display: flex;
+    list-style:none;
+
+    &--item,
+    &--enlace {
+      display: flex;
+    }
+
+    &--item {
+      &:not(:first-of-type) {
+        border-left: 1px solid rgba(white, 0.3);
+      }
+    }
+    &--enlace {
+      align-items: center;
+      padding: 0 10px;
+      color: white;
+
+      &:hover {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
