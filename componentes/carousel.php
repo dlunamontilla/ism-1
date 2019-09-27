@@ -9,13 +9,13 @@ $carousel = <<<HTML
 \t\t\t   
 \t\t\t  <div class="carousel-inner">
 \t\t\t    <div class="carousel-item active">
-\t\t\t      <img src="..." class="d-block w-100" alt="...">
+\t\t\t      <img src="vista/images/carousel/0066.jpg" class="d-block w-100" alt="0066">
 \t\t\t    </div>
 \t\t\t    <div class="carousel-item">
-\t\t\t      <img src="..." class="d-block w-100" alt="...">
+\t\t\t      <img src="vista/images/carousel/0067.jpg" class="d-block w-100" alt="0067">
 \t\t\t    </div>
 \t\t\t    <div class="carousel-item">
-\t\t\t      <img src="..." class="d-block w-100" alt="...">
+\t\t\t      <img src="vista/images/carousel/0068.jpg" class="d-block w-100" alt="0068">
 \t\t\t    </div>
 \t\t\t  </div>
 \t\t\t

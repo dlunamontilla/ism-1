@@ -18,7 +18,7 @@
 
     <!-- Estilos principales -->
     <link rel="stylesheet" href="vista/css/fonts.css">
-    <link rel="stylesheet" href="vista/css/style.css?v=1.3">
+    <link rel="stylesheet" href="vista/css/style.css?v=1.4">
   </head>
   
   <body>
@@ -28,6 +28,8 @@
 
       <?= $we; ?>
       
+      <?= $carousel; ?>
+
     </main>
 
     <?= $javascript; ?>

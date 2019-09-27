@@ -96,3 +96,28 @@ header, section, article, footer {
     size: 6rem;
   }
 }
+
+// Personalizar Carousel:
+.carousel {
+  min-height: 200px;
+  height: 525;
+  max-height: 100vh;
+
+  background-color: $color-secundario;
+
+  &-inner {
+    position: relative;
+    height: 525px;
+
+    background-color: silver;
+  }
+
+  img {
+    display: block;
+    position: absolute;
+
+    // Recortando imagenes:
+    object-fit: cover;
+    object-position: center top;
+  }
+}

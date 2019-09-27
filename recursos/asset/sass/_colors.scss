@@ -1,0 +1,19 @@
+.t-color {
+  &--base {
+    color: $color-base;
+  }
+
+  &--secundario {
+    color: $color-secundario;
+  }
+}
+
+.f-color {
+  &--base {
+    background-color: $color-base;
+  }
+
+  &--secundario {
+    background-color: $color-secundario;
+  }
+}
