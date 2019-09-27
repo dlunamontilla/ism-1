@@ -206,6 +206,19 @@ header, section, article, footer {
   font-size: 2rem;
 }
 
+.we {
+  position: relative;
+  margin: 0;
+  min-height: 190px;
+  background-color: white;
+  color: #0d002f;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+}
+
 .navegacion {
   position: relative;
   z-index: 100;

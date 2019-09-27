@@ -76,3 +76,23 @@ header, section, article, footer {
     }
   }
 }
+
+// Seccion de tu y yo:
+.we {
+  position: relative;
+  margin: 0;
+  min-height: 190px;
+  background-color: white;
+  color: $color-base;
+  text-align: center;
+
+  // Cajas flexibles:
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+  font: {
+    size: 6rem;
+  }
+}
