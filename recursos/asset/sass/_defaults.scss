@@ -191,3 +191,38 @@ pre, code {
 .capitalize {
   text-transform: capitalize;
 }
+
+// Tamannos de fuentes:
+.t {
+  &--small, &--pequenno {
+    font-size: 0.85rem;
+  }
+
+  &--big, &--grande {
+    font-size: 1.2rem;
+  }
+
+  &--semi-bold, &--semi-negrita {
+    font-weight: 600;
+  }
+
+  &--bold, &--negrita {
+    font-weight: 800;
+  }
+  
+  &--italic, &--cursiva {
+    font-style: italic;
+  }
+
+  &--oblique, &--oblicua {
+    font-style: oblique;
+  }
+
+  @for $i from 1 through 10 {
+
+    &--#{$i} {
+      font-size: $i + rem;
+    }
+
+  }
+}

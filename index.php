@@ -17,8 +17,8 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Arizonia&display=swap&subset=latin-ext" rel="stylesheet"> -->
 
     <!-- Estilos principales -->
-    <link rel="stylesheet" href="vista/css/fonts.css">
-    <link rel="stylesheet" href="vista/css/style.css?v=1.4">
+    <link rel="stylesheet" href="vista/css/fonts.css?v=1">
+    <link rel="stylesheet" href="vista/css/style.css?v=1.5">
 
     <!-- Favicon -->
     <link rel="icon" sizes="any" href="favicon.png" type="image/png">
