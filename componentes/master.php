@@ -2,6 +2,7 @@
 
 include __DIR__ . "/carousel.php";
 include __DIR__ . "/we.php";
+include __DIR__ . "/seccionA.php";
 include __DIR__ . "/scripts.php";
 include __DIR__ . "/menu-horizontal.php";
 

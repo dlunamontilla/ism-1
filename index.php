@@ -19,6 +19,9 @@
     <!-- Estilos principales -->
     <link rel="stylesheet" href="vista/css/fonts.css">
     <link rel="stylesheet" href="vista/css/style.css?v=1.4">
+
+    <!-- Favicon -->
+    <link rel="icon" sizes="any" href="favicon.png" type="image/png">
   </head>
   
   <body>
@@ -26,9 +29,7 @@
       
       <?= $header ?>
 
-      <?= $we; ?>
-      
-      <?= $carousel; ?>
+      <?= $content; ?>
 
     </main>
 

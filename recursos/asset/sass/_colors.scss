@@ -6,6 +6,10 @@
   &--secundario {
     color: $color-secundario;
   }
+
+  &--A {
+    color: $color-A;
+  }
 }
 
 .f-color {
@@ -15,5 +19,10 @@
 
   &--secundario {
     background-color: $color-secundario;
+  }
+
+  &--A {
+    background-color: $color-A;
+    background-image: url("../images/fondo.png");
   }
 }

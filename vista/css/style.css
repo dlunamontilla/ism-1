@@ -133,11 +133,26 @@ pre, code {
   text-decoration: underline;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
 .t-color--base {
   color: #0d002f;
 }
 .t-color--secundario {
   color: #d59a00;
+}
+.t-color--A {
+  color: #f1f2f4;
 }
 
 .f-color--base {
@@ -145,6 +160,10 @@ pre, code {
 }
 .f-color--secundario {
   background-color: #d59a00;
+}
+.f-color--A {
+  background-color: #f1f2f4;
+  background-image: url("../images/fondo.png");
 }
 
 header, section, article, footer, aside, div, p, nav {
@@ -249,6 +268,16 @@ header, section, article, footer {
   position: absolute;
   object-fit: cover;
   object-position: center top;
+}
+
+.content {
+  position: relative;
+}
+.content--item {
+  min-height: 200px;
+}
+.content--A {
+  border-top: 16px solid #140049;
 }
 
 .navegacion {

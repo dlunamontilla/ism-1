@@ -121,3 +121,16 @@ header, section, article, footer {
     object-position: center top;
   }
 }
+
+// Contenido de secciones de la pagina:
+.content {
+  position: relative;
+
+  &--item {
+    min-height: 200px;
+  }
+
+  &--A {
+    border-top: 16px solid lighten($color-base, 5);
+  }
+}
