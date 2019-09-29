@@ -143,10 +143,157 @@ header, section, article, footer {
   &--0 {
     margin: 0;
   }
+
+  @for $i from 1 through 10 {
+    $multiplo: $i * 5;
+    
+    &--#{$multiplo} {
+      margin: $multiplo + px;
+    }
+  }
 }
 
 // Imagen de decoracion:
 .decoracion {
   margin-top: 40px;
   margin-bottom: 0;
+}
+
+// Seccion Timer:
+.timer {
+  background-color: $color-base;
+  color: white;
+
+  padding-top: 17%;
+}
+
+// Como llegar:
+.como-llegar {
+  border-bottom: 14px solid lighten($color-base, 5);
+  background-color: $color-A;
+  padding: 40px 0;
+
+  &--content {
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 100px;
+  }
+}
+
+.flex {
+  &, &--item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--item {
+    flex-direction: column;
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-height: 100px;
+
+    &:not(:first-of-type) {
+      border-left: 1px solid $color-secundario;
+    }
+  }
+}
+
+// Ubicacion:
+.ubicacion {
+  &--small {
+    height: 35px;
+  }
+}
+
+// Grid:
+.grid {
+  display: grid;
+
+  &--auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  &--item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--gap {
+    grid-gap: 40px;
+  }
+}
+
+// Redes Sociales:
+.instagram {
+  --diametro: 300px;
+
+  width: var(--diametro);
+  height: var(--diametro);
+
+  background-color: $instagram-3;
+  background-image: linear-gradient(180deg, $instagram-1, $instagram-2, $instagram-3);
+  
+  &--circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: calc(var(--diametro) / 2);
+  }
+  
+  &--circle-small {
+    --small: 20px;
+
+    width: calc(var(--diametro) - 20px);
+    height: calc(var(--diametro) - 20px);
+    border-radius: calc((var(--diametro) - var(--small)) / 2);
+    
+    background-color: white;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      --radius: calc((var(--diametro) - var(--small) * 2));
+      
+      display: block;
+      position: relative;
+      width: var(--radius);
+      height: var(--radius);
+
+      border-radius: calc(var(--radius) / 2);
+    }
+  }
+}
+
+// Maquillaje:
+.maquillaje {
+  padding: 20px 0;
+}
+
+// Tarjetas:
+// Card-1:
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  &--con-foto {
+    grid-gap: 20px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  &--images {
+    margin-bottom: 40px;
+    border-bottom: 16px solid darken($instagram-3, 10);
+  }
 }

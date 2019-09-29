@@ -226,3 +226,17 @@ pre, code {
 
   }
 }
+
+// Vista previa (thumbnails):
+.thumbnail {
+  &--small {
+    width: 250px;
+  }
+
+  &--shadow {
+    padding: 10px;
+    background-color: darken(white, 5);
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba($color-base, 0.5);
+  }
+}

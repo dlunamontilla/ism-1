@@ -10,6 +10,10 @@
   &--A {
     color: $color-A;
   }
+
+  &--white {
+    background-color: white;
+  }
 }
 
 .f-color {
@@ -24,5 +28,9 @@
   &--A {
     background-color: $color-A;
     background-image: url("../images/fondo.png");
+  }
+
+  &--white {
+    background-color: white;
   }
 }

@@ -1,0 +1,26 @@
+// Botones:
+.btn {
+  --height: 40px;
+
+  transition: 300ms ease;
+  min-height: var(--height);
+  min-width: 140px;
+
+  // Cajas flexibles
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &--enlace {
+    background-color: lighten($color-base, 5);
+    color: white;
+    padding: 0 10px;
+    border-radius: calc(var(--height) / 2);
+    
+    &:hover {
+      color: white;
+      background-color: lighten($color-base, 13);
+    }
+  }
+}

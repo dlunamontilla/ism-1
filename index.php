@@ -18,7 +18,7 @@
 
     <!-- Estilos principales -->
     <link rel="stylesheet" href="vista/css/fonts.css?v=1">
-    <link rel="stylesheet" href="vista/css/style.css?v=1.5">
+    <link rel="stylesheet" href="vista/css/style.css?v=1.6">
 
     <!-- Favicon -->
     <link rel="icon" sizes="any" href="favicon.png" type="image/png">

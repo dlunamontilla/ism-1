@@ -8,7 +8,15 @@ $content = <<<HTML
   $carousel
 
   $seccionA
+
+  $timer
   
+  $comoLlegar
+
+  $maquillaje
+
+  $quehacer
+
 </div>
 
 HTML;
