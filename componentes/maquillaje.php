@@ -17,7 +17,7 @@ $maquillaje = <<<HTML
         </div>
         <p>&nbsp;</p>
         <p class="m--0 text--center uppercase"><span class="t-color--base t--semi-bold">@karenvivarbeauty</span></p>
-        <p class="text--center">WS: <span class="fas fa-phone"></span> 3318483026</p>
+        <p class="text--center t-color--ws-hover">WS: <span class="fas fa-phone"></span> 3318483026</p>
 
         <!-- Enlace tipo botón -->
         <p><a href="#" class="btn btn--enlace uppercase">Contact</a></p>

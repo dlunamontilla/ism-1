@@ -16,6 +16,10 @@
     <!-- Fuentes -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Arizonia&display=swap&subset=latin-ext" rel="stylesheet"> -->
 
+    <!-- Font Asesome -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="recursos/extensiones/otras/fontawesome-free-5.5.0-web/css/all.css">
+    
     <!-- Estilos principales -->
     <link rel="stylesheet" href="vista/css/fonts.css?v=1">
     <link rel="stylesheet" href="vista/css/style.css?v=1.6">

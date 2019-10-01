@@ -1,0 +1,67 @@
+.rrss {
+  padding: 10px;
+
+  &__ul {
+    display: flex;
+    list-style: none;
+
+    &--item, & {
+      padding: 0;
+      margin: 0;
+    }
+
+    &--item, &--enlace {
+      position: relative;
+      display: flex;
+    }
+
+    &--item {
+      --diametro: 40px;
+
+      // Proporciones:
+      width: var(--diametro);
+      height: var(--diametro);
+      padding: 0;
+    }
+
+    &--enlace {
+      flex-grow: 1;
+      flex-shrink: 1;
+
+      justify-content: center;
+      align-items: center;
+
+      font-size: 1.6rem;
+      color: darken(white, 80);
+      transition: 300ms ease;
+      outline: medium none;
+
+      i {
+        transition: 300ms ease;
+      }
+      
+      &:hover {
+        text-decoration: none;
+
+        .fa-facebook {
+          color: $color-facebook;
+        }
+
+        .fa-twitter {
+          color: $color-twitter;
+        }
+
+        .fa-instagram {
+          color: $instagram-3;
+        }
+      }
+
+      &:focus {
+        $color: lighten($color-base, 30);
+        $color: rgba($color, 0.2);
+
+        outline: 3px solid $color;
+      }
+    }
+  }
+}

@@ -7,42 +7,30 @@ $quehacer = <<<HTML
 
   <div class="default tarjetas tarjetas--con-foto">
     <div class="tarjetas--item">
-      <div class="tarjetas--images"><img src="vista/images/puente.jpg" alt="Foto"></div>
+      <div class="tarjetas--images"><img class="tarjetas__img" src="vista/images/puente.jpg" alt="Foto"></div>
 
       <p class="uppercase t--semi-bold">Se insertará texto con lugares turísticos de interés y botón de acción para que te lleve.</p>
       <p><a href="#" class="btn btn--enlace uppercase">+Info</a></p>
 
-      <div class="rrss">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
-      </div>
+      $rrss
     </div>
 
     <div class="tarjetas--item">
-      <div class="tarjetas--images"><img src="vista/images/puente.jpg" alt="Foto"></div>
+      <div class="tarjetas--images"><img class="tarjetas__img" src="vista/images/puente.jpg" alt="Foto"></div>
 
       <p class="uppercase t--semi-bold">Se insertará texto con lugares turísticos de interés y botón de acción para que te lleve.</p>
       <p><a href="#" class="btn btn--enlace uppercase">+Info</a></p>
 
-      <div class="rrss">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
-      </div>
+      $rrss
     </div>
 
     <div class="tarjetas--item">
-      <div class="tarjetas--images"><img src="vista/images/puente.jpg" alt="Foto"></div>
+      <div class="tarjetas--images"><img class="tarjetas__img" src="vista/images/puente.jpg" alt="Foto"></div>
 
       <p class="uppercase t--semi-bold">Se insertará texto con lugares turísticos de interés y botón de acción para que te lleve.</p>
       <p><a href="#" class="btn btn--enlace uppercase">+Info</a></p>
 
-      <div class="rrss">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
-      </div>
+      $rrss
     </div>
 
   </div>

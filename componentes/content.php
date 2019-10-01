@@ -17,6 +17,12 @@ $content = <<<HTML
 
   $quehacer
 
+  $dondeQuedarse
+  
+  $rsvp
+  
+  $seccionB
+  
 </div>
 
 HTML;

@@ -12,7 +12,19 @@
   }
 
   &--white {
-    background-color: white;
+    color: white;
+  }
+
+  &--ws, &--whatsapp {
+    color: $color-whatsapp;
+
+    &-hover {
+      transition: 300ms ease;
+      
+      &:hover {
+        color: $color-whatsapp;
+      }
+    }
   }
 }
 
@@ -32,5 +44,9 @@
 
   &--white {
     background-color: white;
+  }
+
+  &--ws, &--whatsapp {
+    background-color: $color-whatsapp;
   }
 }
