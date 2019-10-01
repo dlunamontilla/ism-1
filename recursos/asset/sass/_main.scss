@@ -422,6 +422,7 @@ header, section, article, footer {
 
 .rsvp {
   background-image: url('../images/carousel/0066.jpg');
+  background-size: auto 100%;
 }
 
 // Logo
@@ -437,7 +438,7 @@ header, section, article, footer {
 
 // Contacto:
 .contacto {
-  --margin: 30px;
+  --margin: 50px;
 
   margin-left:auto;
   margin-right: auto;
@@ -463,6 +464,7 @@ header, section, article, footer {
   }
 
   .fab {
-    padding-right: 10px;
+    padding-right: 5px;
+    font-size: 1.1rem;
   }
 }

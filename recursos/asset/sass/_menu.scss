@@ -27,8 +27,8 @@
           margin: auto;
           left: 0; right: auto;
           top: 0; bottom: 0;
-          height: 50%;
-          border-left: 1px solid rgba(white, 0.2);
+          height: 25px;
+          // border-left: 1px solid rgba($color-base, 0.2);
         }
       }
 
@@ -37,21 +37,67 @@
     }
 
     &--enlace {
+      --padding: 15px;
+
+      position: relative;
       align-items: center;
-      padding: 0 15px;
+      padding: 0 var(--padding);
       color: $color-base;
       justify-content: center;
-      
+      outline: medium none;
+
       font: {
         size: 0.9rem;
         weight: 400;
       }
-
+      
       text-transform: uppercase;
+      
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        margin: auto;
+        left: 0; right: 0;
+        top: 0; bottom: 25%;
+        width: calc(100% - (var(--padding) * 2));
+        transition: 300ms ease;
+        transform: rotateY(30deg);
+        opacity: 0;
+
+        $color: lighten($color-base, 20);
+        $color: rgba($color, 0.5);
+        border-bottom: 1px solid $color;
+
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: $color;
+      }
+
+      $color: $color-base !default;
 
       &:hover {
         color: $color-base;
         text-decoration: none;
+
+        &::before {
+          border-bottom-color: $color;
+        }
+      }
+      
+      &:hover, &:focus {
+        &::before {
+          opacity: 1;
+          transform: rotateY(0deg);
+        }
+      }
+
+      &:focus {
+        $color: $color-secundario;
+
+        &::before {
+          border-bottom-color: $color;
+        }
       }
     }
   }

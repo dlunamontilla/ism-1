@@ -142,7 +142,7 @@ pre, code {
   width: calc(#{$width} - 10px);
   max-width: $max-width;
   
-  &:not(hr):not([class="contacto"]) {
+  &:not(hr):not([class*="contacto"]) {
     margin: 0 auto;
   }
 }
@@ -152,7 +152,6 @@ pre, code {
     margin: 20px auto;
     border-left: 0; border-right: 0;
     border-top: 0;
-    border-bottom: 1px solid;
     height: 0;
   }
 }

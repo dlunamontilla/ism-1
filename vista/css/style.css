@@ -101,7 +101,7 @@ pre, code {
   width: calc(100% - 10px);
   max-width: 1200px;
 }
-.default:not(hr):not([class="contacto"]), .predeterminado:not(hr):not([class="contacto"]) {
+.default:not(hr):not([class*="contacto"]), .predeterminado:not(hr):not([class*="contacto"]) {
   margin: 0 auto;
 }
 
@@ -110,7 +110,6 @@ pre, code {
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  border-bottom: 1px solid;
   height: 0;
 }
 
@@ -595,6 +594,7 @@ header, section, article, footer {
 
 .rsvp {
   background-image: url("../images/carousel/0066.jpg");
+  background-size: auto 100%;
 }
 
 .seccion-b--logo {
@@ -605,7 +605,7 @@ header, section, article, footer {
 }
 
 .contacto {
-  --margin: 30px;
+  --margin: 50px;
   margin-left: auto;
   margin-right: auto;
   margin-top: var(--margin);
@@ -624,7 +624,8 @@ header, section, article, footer {
   color: #54cc61;
 }
 .contacto .fab {
-  padding-right: 10px;
+  padding-right: 5px;
+  font-size: 1.1rem;
 }
 
 .rrss {
@@ -829,21 +830,51 @@ header, section, article, footer {
   right: auto;
   top: 0;
   bottom: 0;
-  height: 50%;
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  height: 25px;
 }
 .menu-horizontal--enlace {
+  --padding: 15px;
+  position: relative;
   align-items: center;
-  padding: 0 15px;
+  padding: 0 var(--padding);
   color: #0d002f;
   justify-content: center;
+  outline: medium none;
   font-size: 0.9rem;
   font-weight: 400;
   text-transform: uppercase;
 }
+.menu-horizontal--enlace::before {
+  content: "";
+  display: block;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 25%;
+  width: calc(100% - (var(--padding) * 2));
+  transition: 300ms ease;
+  transform: rotateY(30deg);
+  opacity: 0;
+  border-bottom: 1px solid rgba(41, 0, 149, 0.5);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(41, 0, 149, 0.5);
+}
 .menu-horizontal--enlace:hover {
   color: #0d002f;
   text-decoration: none;
+}
+.menu-horizontal--enlace:hover::before {
+  border-bottom-color: #0d002f;
+}
+.menu-horizontal--enlace:hover::before, .menu-horizontal--enlace:focus::before {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+.menu-horizontal--enlace:focus::before {
+  border-bottom-color: #d59a00;
 }
 
 .logo--fondo {
