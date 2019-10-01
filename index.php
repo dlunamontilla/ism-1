@@ -21,8 +21,8 @@
     <link rel="stylesheet" href="recursos/extensiones/otras/fontawesome-free-5.5.0-web/css/all.css">
     
     <!-- Estilos principales -->
-    <link rel="stylesheet" href="vista/css/fonts.css?v=1">
-    <link rel="stylesheet" href="vista/css/style.css?v=1.6">
+    <link rel="stylesheet" href="vista/css/fonts.css?v=1.1">
+    <link rel="stylesheet" href="vista/css/style.css?v=1.7">
 
     <!-- Favicon -->
     <link rel="icon" sizes="any" href="favicon.png" type="image/png">
