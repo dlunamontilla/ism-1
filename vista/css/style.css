@@ -101,7 +101,7 @@ pre, code {
   width: calc(100% - 10px);
   max-width: 1200px;
 }
-.default:not(hr):not([class]), .predeterminado:not(hr):not([class]) {
+.default:not(hr):not([class="contacto"]), .predeterminado:not(hr):not([class="contacto"]) {
   margin: 0 auto;
 }
 
