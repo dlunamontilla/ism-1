@@ -1,5 +1,6 @@
 <?php
 
+include __DIR__ . "/contacto.php";
 include __DIR__ . "/carousel.php";
 include __DIR__ . "/rrss.php";
 include __DIR__ . "/we.php";

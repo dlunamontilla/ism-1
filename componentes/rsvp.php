@@ -7,6 +7,8 @@ $rsvp = <<<HTML
 
   $form
   
+  $contacto
+  
 </div>
 
 HTML;

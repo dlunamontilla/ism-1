@@ -142,7 +142,7 @@ pre, code {
   width: calc(#{$width} - 10px);
   max-width: $max-width;
   
-  &:not(hr) {
+  &:not(hr):not([class]) {
     margin: 0 auto;
   }
 }

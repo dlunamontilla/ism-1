@@ -101,7 +101,7 @@ pre, code {
   width: calc(100% - 10px);
   max-width: 1200px;
 }
-.default:not(hr), .predeterminado:not(hr) {
+.default:not(hr):not([class]), .predeterminado:not(hr):not([class]) {
   margin: 0 auto;
 }
 
@@ -602,6 +602,29 @@ header, section, article, footer {
   width: 300px;
   height: auto;
   margin: 0 auto;
+}
+
+.contacto {
+  --margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: var(--margin);
+  color: white;
+  justify-content: center;
+}
+.contacto--separador {
+  --padding: 20px;
+  padding: 0 var(--padding);
+  transition: 300ms ease;
+}
+.contacto--separador:not(:first-of-type) {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+.contacto--separador:hover {
+  color: #54cc61;
+}
+.contacto .fab {
+  padding-right: 10px;
 }
 
 .rrss {
