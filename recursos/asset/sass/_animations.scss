@@ -1,0 +1,7 @@
+// Definir las animaciones del menu:
+@keyframes desplegar {
+  form {
+    opacity: 0;
+    transform: rotateX(30deg);
+  }
+}

@@ -156,5 +156,12 @@
 .group {
   &--button {
     margin-top: 50px;
+
+    &-movil {
+      margin: 0;
+
+      padding: 2px 0;
+      background-color: $color-base;
+    }
   }
 }

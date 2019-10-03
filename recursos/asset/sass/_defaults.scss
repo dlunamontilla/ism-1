@@ -23,7 +23,10 @@ html, body {
   }
 
   color: #606060;
-  background-color: lighten($color-base, 65);
+
+  $color: desaturate($color-base, 50);
+  $color: lighten($color, 20);
+  background-color: lighten($color, 65);
 }
 
 body {

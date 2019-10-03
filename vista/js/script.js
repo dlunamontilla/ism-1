@@ -1,16 +1,3 @@
-// jQuery
-(function ($) {
-
-  $(document).ready(function () {
-    // Intervalo del carrusel:
-    $('.carousel').carousel({
-      interval: 2000
-    });
-
-    
-  });
-}(jQuery));
-
 // JavaScript puro:
 (function (window, document) {
   const inputFocused = document.querySelectorAll("form input[type='text']");
@@ -32,6 +19,22 @@
         textFocused[key].classList.add("rsvp__label--text-focused");
 
     });
+
+
+    // Control del menú de navegación:
+    const menuButton = document.querySelector("#menuButton");
+    const menuLista = document.querySelector("#menuLista");
+
+    let 
+      isButton = Object.prototype.toString.call(menuButton) === '[object HTMLButtonElement]',
+      isMenu = Object.prototype.toString.call(menuLista) === '[object HTMLUListElement]';
+
+    
+      if ( isButton && isMenu ) {
+        menuButton.addEventListener('click', () => {
+          menuLista.classList.toggle('menu-movil--active');
+        }, false);
+      }
   }
 
 }(window, document))

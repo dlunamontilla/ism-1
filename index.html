@@ -33,7 +33,7 @@
   
   <div class="default navegacion">
     
-<nav class="navigation-h">
+<nav class="navigation-h" style="background-color: rgba(0, 0, 0, 0.35)">
   <ul class="menu-horizontal">
     <li class="menu-horizontal--item"><a class="menu-horizontal--enlace" href="#">GONZALO & FERNANDA</a></li>
     <li class="menu-horizontal--item"><a class="menu-horizontal--enlace" href="#">HOME</a></li>
@@ -45,9 +45,25 @@
   </ul>
 </nav>
 
+<!-- Requiere uso de JavaScript -->
+<nav class="navigation-h--movil">
+  <div class="group--button-movil">
+    <button type="button" class="btn btn--menu" id="menuButton"><i class="fas fa-bars"></i>Menú</button>
+  </div>
+
+  <ul class="menu-movil" id="menuLista">
+    <li class="menu-movil--item"><a href="#" class="menu-movil--enlace">GONZALO & FERNANDA</a></li>
+    <li class="menu-movil--item"><a href="#" class="menu-movil--enlace">HOME</a></li>
+    <li class="menu-movil--item"><a href="#" class="menu-movil--enlace">Nuestra Historia</a></li>
+    <li class="menu-movil--item"><a href="#" class="menu-movil--enlace">Wedding</a></li>
+    <li class="menu-movil--item"><a href="#" class="menu-movil--enlace">Sitios de Interés</a></li>
+    <li class="menu-movil--item"><a href="#" class="menu-movil--enlace">Regístrese</a></li>
+    <li class="menu-movil--item"><a href="#" class="menu-movil--enlace">RSVP</a></li>
+  </ul>
+</nav>
   </div>
   
-  <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="120000">
 			  <ol class="carousel-indicators">
 			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -56,13 +72,13 @@
 			   
 			  <div class="carousel-inner">
 			    <div class="carousel-item active">
-			      <img src="vista/images/carousel/0066.jpg" class="d-block w-100" alt="0066">
+			      <img src="vista/images/carousel/0066.jpg" class="d-block" alt="0066">
 			    </div>
 			    <div class="carousel-item">
-			      <img src="vista/images/carousel/0067.jpg" class="d-block w-100" alt="0067">
+			      <img src="vista/images/carousel/0067.jpg" class="d-block" alt="0067">
 			    </div>
 			    <div class="carousel-item">
-			      <img src="vista/images/carousel/0068.jpg" class="d-block w-100" alt="0068">
+			      <img src="vista/images/carousel/0068.jpg" class="d-block" alt="0068">
 			    </div>
 			  </div>
 			
@@ -103,7 +119,7 @@
 </div>
 
 
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="120000">
 			  <ol class="carousel-indicators">
 			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -112,13 +128,13 @@
 			   
 			  <div class="carousel-inner">
 			    <div class="carousel-item active">
-			      <img src="vista/images/carousel/0066.jpg" class="d-block w-100" alt="0066">
+			      <img src="vista/images/carousel/0066.jpg" class="d-block" alt="0066">
 			    </div>
 			    <div class="carousel-item">
-			      <img src="vista/images/carousel/0067.jpg" class="d-block w-100" alt="0067">
+			      <img src="vista/images/carousel/0067.jpg" class="d-block" alt="0067">
 			    </div>
 			    <div class="carousel-item">
-			      <img src="vista/images/carousel/0068.jpg" class="d-block w-100" alt="0068">
+			      <img src="vista/images/carousel/0068.jpg" class="d-block" alt="0068">
 			    </div>
 			  </div>
 			
@@ -158,7 +174,7 @@
 
   
   <div class="timer">
-    
+    <span class="t-color--white t--3 text--center">Texto de prueba</span>
   </div>
 
   
@@ -388,6 +404,7 @@
   <h2 class="fuente-especial uppercase t--5 t-color--white text--center">RSVP</h2>
 
   
+<!-- **naila20** -->
 <div class="rsvp--form">
   <p class="uppercase t--semi-bold t-color--white">Por favor, confirmar tu asistencia antes del 01 de noviembre:</p>
 

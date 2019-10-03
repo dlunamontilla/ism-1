@@ -1,6 +1,6 @@
 <?php
 $carousel = <<<HTML
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="120000">
 \t\t\t  <ol class="carousel-indicators">
 \t\t\t    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 \t\t\t    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -9,13 +9,13 @@ $carousel = <<<HTML
 \t\t\t   
 \t\t\t  <div class="carousel-inner">
 \t\t\t    <div class="carousel-item active">
-\t\t\t      <img src="vista/images/carousel/0066.jpg" class="d-block w-100" alt="0066">
+\t\t\t      <img src="vista/images/carousel/0066.jpg" class="d-block" alt="0066">
 \t\t\t    </div>
 \t\t\t    <div class="carousel-item">
-\t\t\t      <img src="vista/images/carousel/0067.jpg" class="d-block w-100" alt="0067">
+\t\t\t      <img src="vista/images/carousel/0067.jpg" class="d-block" alt="0067">
 \t\t\t    </div>
 \t\t\t    <div class="carousel-item">
-\t\t\t      <img src="vista/images/carousel/0068.jpg" class="d-block w-100" alt="0068">
+\t\t\t      <img src="vista/images/carousel/0068.jpg" class="d-block" alt="0068">
 \t\t\t    </div>
 \t\t\t  </div>
 \t\t\t

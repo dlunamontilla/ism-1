@@ -6,6 +6,22 @@ header, section, article, footer {
   margin: 0 auto;
 }
 
+.main {
+  transition: 300ms ease;
+
+  @media screen and (min-width: 1500px) {
+    margin: 20px auto;
+    max-width: calc(1500px - 20px);
+    border-radius: 10px;
+    padding: 10px;
+
+    $color: lighten($color-base, 20);
+    background-color: #f9f9f9;
+    box-shadow: 0 0 2px rgba($color, 0.5);
+    overflow: hidden;
+  }
+}
+
 .header {
   min-height: $min-height;
 
@@ -99,29 +115,45 @@ header, section, article, footer {
 
 // Personalizar Carousel:
 .carousel {
-  min-height: 200px;
-  height: 525;
   max-height: 100vh;
-
   background-color: $color-secundario;
 
   &-inner {
     position: relative;
-    height: 525px;
-
     background-color: silver;
   }
 
-  img {
-    display: block;
-    position: absolute;
+  &-item {
+    --padding: 44.44%;
+    transition: 300ms ease;
 
-    // Recortando imagenes:
-    object-fit: cover;
-    object-position: center top;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    padding-top: var(--padding);
+  }
+
+  img.d-block {
+    position: absolute;
+    margin: auto;
+    height: 100%;
+
+    left: 0; right: auto;
+    top:0; bottom: auto;
   }
 }
 
+@supports (object-fit: cover) {
+  .carousel {
+    img {
+      width: 100%;
+
+      // Si es soportado, utilizar esta propiedad:
+      object-fit: cover;
+      object-position: center top;
+    }
+  }
+}
 // Contenido de secciones de la pagina:
 .content {
   position: relative;

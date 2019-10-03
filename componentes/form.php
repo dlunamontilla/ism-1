@@ -2,6 +2,7 @@
 
 $form = <<<HTML
 
+<!-- **naila20** -->
 <div class="rsvp--form">
   <p class="uppercase t--semi-bold t-color--white">Por favor, confirmar tu asistencia antes del 01 de noviembre:</p>
 
