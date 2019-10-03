@@ -194,8 +194,8 @@
     max-width: $max-width;
     transition: 300ms ease opacity;
     
-    $width-layer: calc(#{$width} - 20px);
-    width: $width-layer;
+    // $width-layer: calc(#{$width} - 20px);
+    width: $width;
     background-color: rgba($color-base, 0.7);
 
     // Mostrar el menú dependiento de la resolucion

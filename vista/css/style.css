@@ -991,7 +991,7 @@ header, section, article, footer {
   bottom: auto;
   max-width: 1200px;
   transition: 300ms ease opacity;
-  width: calc(100% - 20px);
+  width: 100%;
   background-color: rgba(13, 0, 47, 0.7);
 }
 @media screen and (min-width: 1024px) {
