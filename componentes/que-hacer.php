@@ -2,7 +2,7 @@
 
 $quehacer = <<<HTML
 
-<div class="que-hacer f-color--A">
+<div class="que-hacer padding padding--v f-color--A">
   <p class="text--center"><span class="t--6 fuente-especial t-color--base">¿Qué hacer en Mérida?</span></p>
 
   <div class="default tarjetas tarjetas--con-foto">

@@ -213,6 +213,16 @@ header, section, article, footer {
 }
 
 .flex {
+  $width-layer: calc(#{$width} - 20px);
+  width: $width-layer;
+  transition: 300ms ease;
+
+  @media screen and (max-width: 599px) {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+
   &, &--item {
     display: flex;
     justify-content: center;
@@ -225,9 +235,22 @@ header, section, article, footer {
     flex-grow: 1;
     flex-shrink: 1;
     min-height: 100px;
+    transition: 300ms ease;
+
+    @media screen and (max-width: 599px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      flex-basis: 100%;
+
+      &:not(:last-of-type) {
+        border-bottom: 1px solid $color-secundario;
+      }
+    }
 
     &:not(:first-of-type) {
-      border-left: 1px solid $color-secundario;
+      @media screen and (min-width: 600px) {
+        border-left: 1px solid $color-secundario;
+      }
     }
   }
 
@@ -322,16 +345,49 @@ header, section, article, footer {
 
 .tarjetas {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
+  @media screen and (min-width: 600px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  @media screen and (max-width: 599px) {
+    grid-template-columns: 1fr;
+  }
 
   &--con-foto {
     grid-gap: 20px;
   }
 
   &--sin-foto {
-    grid-gap: 80px;
+    transition: 300ms ease;
+
+    $gap: 80px;
+    @media screen and (min-width: 900px) {
+      grid-gap: $gap;
+      gap: $gap;
+    }
+
+    $gap: 20px;
+    @media screen and (max-width: 899px) {
+      grid-gap: $gap;
+      gap: $gap;
+    }
   }
 
+  &--item {
+    transition: 300ms ease;
+    padding: 10px;
+    background-color: darken(white, 2);
+    border: 1px solid white;
+    box-shadow: 0 0 2px rgba(black, 0.2);
+    border-radius: 4px;
+
+    @media screen and (max-width: 600px) {
+    }
+
+    width: $width-layer;
+    margin: 0 auto;
+  }
 
   &--borde {
     display: flex;
@@ -359,8 +415,9 @@ header, section, article, footer {
     box-shadow: var(--xy) var(--xy) 20px $color;
     border-radius: 5px;
   }
+
   img {
-    max-width: 100%;
+    width: $width;
   }
 
   &__img {
@@ -390,6 +447,9 @@ header, section, article, footer {
 .donde-quedarse {
   position: relative;
   padding: 20px 0;
+
+  background-color: darken(white, 2);
+  border-top: 1px solid darken(white, 20);
 }
 
 // Linea horizontal:
@@ -486,9 +546,22 @@ header, section, article, footer {
     padding: 0 var(--padding);
     transition: 300ms ease;
     
-    &:not(:first-of-type) {
-      border-left: 1px solid rgba(white, 0.3);
+    @media screen and (min-width: 500px) {
+      &:not(:first-of-type) {
+        border-left: 1px solid rgba(white, 0.3);
+      }
     }
+
+    @media screen and (max-width: 499px) {
+      width: $width;
+      text-align: center;
+
+      &:not(:first-of-type) {
+        border-top: 1px solid rgba(white, 0.3);
+        padding-top: 10px;
+      }
+    }
+
 
     &:hover {
       color: $color-whatsapp;

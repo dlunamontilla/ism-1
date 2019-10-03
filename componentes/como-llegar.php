@@ -16,7 +16,7 @@ $comoLlegar = <<<HTML
           <!-- Botón -->
           <p><a href="#" class="btn btn--enlace">RSVP</a></p>
 
-          <p class="text--center">
+          <p class="text--center width">
             <img class="thumbnail thumbnail--small thumbnail--shadow" src="vista/images/google-maps.png" alt="Google Maps">
           </p>
 
@@ -31,7 +31,7 @@ $comoLlegar = <<<HTML
           <!-- Botón -->
           <p><a href="#" class="btn btn--enlace">RSVP</a></p>
 
-          <p class="text--center">
+          <p class="text--center width">
             <img class="thumbnail thumbnail--small thumbnail--shadow" src="vista/images/google-maps.png" alt="Google Maps">
           </p>
 

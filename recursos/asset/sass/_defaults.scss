@@ -232,7 +232,14 @@ pre, code {
 // Vista previa (thumbnails):
 .thumbnail {
   &--small {
-    width: 250px;
+    @media screen and (min-width: 600px) {
+      width: 250px;
+    }
+
+    @media screen and (max-width: 599px) {
+      width: calc(100% - 20px);
+      max-width: 350px;
+    }
   }
 
   &--shadow {

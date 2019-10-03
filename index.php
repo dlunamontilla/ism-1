@@ -5,7 +5,7 @@
 <html lang="es-ES">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gonzalo & Fernanda</title>
 
@@ -22,7 +22,7 @@
     
     <!-- Estilos principales -->
     <link rel="stylesheet" href="vista/css/fonts.css?v=1.1">
-    <link rel="stylesheet" href="vista/css/style.css?v=1.11">
+    <link rel="stylesheet" href="vista/css/style.css?v=1.14">
 
     <!-- Favicon -->
     <link rel="icon" sizes="any" href="favicon.png" type="image/png">

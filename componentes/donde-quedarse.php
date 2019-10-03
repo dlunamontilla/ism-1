@@ -2,7 +2,7 @@
 
 $dondeQuedarse = <<<HTML
 
-<div class="donde-quedarse f-color--white padding">
+<div class="donde-quedarse">
   <div class="default">
     <h2 class="t--6 text--center fuente-especial t-color--base">¿Dónde quedarse?</h2>
 
