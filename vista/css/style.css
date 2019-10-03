@@ -709,7 +709,7 @@ header, section, article, footer {
 }
 
 @keyframes desplegar {
-  form {
+  from {
     opacity: 0;
     transform: rotateX(30deg);
   }
@@ -840,7 +840,6 @@ header, section, article, footer {
 .group--button-movil {
   margin: 0;
   padding: 2px 0;
-  background-color: #0d002f;
 }
 
 .navegacion {
@@ -928,7 +927,12 @@ header, section, article, footer {
   transition: 300ms ease;
   padding: 10px;
   margin: 0;
+  transform-style: preserve-3d;
+  transform-origin: center top;
   display: none;
+}
+.menu-movil--active {
+  animation: 500ms ease desplegar 1;
 }
 @media screen and (min-width: 1024px) {
   .menu-movil--active {
@@ -940,7 +944,6 @@ header, section, article, footer {
   .menu-movil--active {
     opacity: 1;
     display: block;
-    animation: 300ms ease desplegar 1;
   }
 }
 .menu-movil--item {
@@ -999,7 +1002,7 @@ header, section, article, footer {
 }
 
 .btn--menu {
-  background-color: #140049;
+  background-color: transparent;
   color: white;
   min-width: auto;
   border-radius: 0;

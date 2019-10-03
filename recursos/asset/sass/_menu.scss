@@ -114,10 +114,13 @@
     transition: 300ms ease;
     padding: 10px;
     margin: 0;
-    
+    transform-style: preserve-3d;
+    transform-origin: center top;
     display: none;
 
     &--active {
+      // Animaciones:
+      animation: 500ms ease desplegar 1;
 
       @media screen and (min-width: 1024px) {
         opacity: 0;
@@ -128,10 +131,7 @@
         opacity: 1;
         display: block;
 
-        // Animaciones:
-        animation: 300ms ease desplegar 1;
       }
-
 
     }
 
@@ -211,7 +211,7 @@
 .btn {
   &--menu {
     $color: lighten($color-base, 5);
-    background-color: $color;
+    background-color: transparent;
     color: white;
     min-width:auto;
     border-radius: 0;
