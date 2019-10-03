@@ -987,8 +987,15 @@ header, section, article, footer {
   top: 0;
   bottom: auto;
   max-width: 1200px;
+  transition: 300ms ease opacity;
   width: calc(100% - 20px);
   background-color: rgba(13, 0, 47, 0.7);
+}
+@media screen and (min-width: 1024px) {
+  .navigation-h--movil {
+    display: none;
+    opacity: 0;
+  }
 }
 
 .btn--menu {

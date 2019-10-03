@@ -1,7 +1,7 @@
 <?php
 $menuHorizontal = <<<HTML
 
-<nav class="navigation-h" style="background-color: rgba(0, 0, 0, 0.35)">
+<nav class="navigation-h">
   <ul class="menu-horizontal">
     <li class="menu-horizontal--item"><a class="menu-horizontal--enlace" href="#">GONZALO & FERNANDA</a></li>
     <li class="menu-horizontal--item"><a class="menu-horizontal--enlace" href="#">HOME</a></li>

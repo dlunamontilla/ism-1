@@ -35,6 +35,15 @@
           menuLista.classList.toggle('menu-movil--active');
         }, false);
       }
+
+    let lista = document.querySelectorAll("#menuLista li");
+    if ( lista.length > 0 ) {
+     lista.forEach(( elemento ) => {
+       elemento.onclick = () => {
+        menuLista.classList.toggle('menu-movil--active');
+       }
+     });
+    }
   }
 
 }(window, document))

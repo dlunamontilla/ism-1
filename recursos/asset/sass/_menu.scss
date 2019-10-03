@@ -192,10 +192,18 @@
     left: 0; right: 0;
     top: 0; bottom: auto;
     max-width: $max-width;
-
+    transition: 300ms ease opacity;
+    
     $width-layer: calc(#{$width} - 20px);
     width: $width-layer;
     background-color: rgba($color-base, 0.7);
+
+    // Mostrar el menú dependiento de la resolucion
+    // de pantalla del dispositivo:
+    @media screen and (min-width: 1024px) {
+      display: none;
+      opacity: 0;
+    }
   }
 }
 
