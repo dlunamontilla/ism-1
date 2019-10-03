@@ -4,7 +4,7 @@
     "recursos/extensiones/js/bootstrap/jquery-3.3.1.slim.min.js",
     "recursos/extensiones/js/bootstrap/popper.min.js",
     "recursos/extensiones/js/bootstrap/bootstrap.min.js",
-    "vista/js/script.js"
+    "vista/js/script.js?v=1.0"
   ],
   
   "produccion" : {
