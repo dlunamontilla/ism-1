@@ -605,3 +605,22 @@ header, section, article, footer {
     font-size: 1.1rem;
   }
 }
+
+.mapas {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  max-width: $max-width;
+  width: $width-layer;
+  height: 500px;
+
+  &__iframe {
+    border: 0;
+    margin: auto;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
