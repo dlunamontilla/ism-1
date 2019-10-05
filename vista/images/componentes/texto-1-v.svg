@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 139.14494 30.000002"
+   height="30mm"
+   width="139.14494mm">
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(42.20258,-102.90488)"
+     id="layer1">
+    <g
+       transform="matrix(0.56115636,0,0,0.56115636,-3.8851755,81.257232)"
+       style="fill:#808080;fill-opacity:1"
+       id="g4749">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:34.61550903px;line-height:1.25;font-family:'valentine vibes';-inkscape-font-specification:'valentine vibes';letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.86538768"
+         x="-70.023094"
+         y="61.741009"
+         id="text3719"><tspan
+           x="-70.023094"
+           y="61.741009"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111069px;font-family:'valentine vibes';-inkscape-font-specification:'valentine vibes';fill:#808080;fill-opacity:1;stroke-width:0.86538768"
+           id="tspan4725">&quot;El amor es el único que crece cuando se reparte&quot;</tspan></text>
+      <text
+         id="text4731"
+         y="84.419571"
+         x="-36.947903"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:34.61550903px;line-height:1.25;font-family:'valentine vibes';-inkscape-font-specification:'valentine vibes';letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.86538768"
+         xml:space="preserve"><tspan
+           id="tspan4729"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111069px;font-family:'valentine vibes';-inkscape-font-specification:'valentine vibes';fill:#808080;fill-opacity:1;stroke-width:0.86538768"
+           y="84.419571"
+           x="-36.947903">~Antoine de Saint ~ Exapery ~</tspan></text>
+    </g>
+    <flowRoot
+       transform="matrix(0.26458333,0,0,0.26458333,-34.460531,99.70811)"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       id="flowRoot4735"
+       xml:space="preserve"><flowRegion
+         id="flowRegion4737"><rect
+           y="-108.55545"
+           x="-177.14285"
+           height="111.42857"
+           width="765.71429"
+           id="rect4739" /></flowRegion><flowPara
+         id="flowPara4741" /></flowRoot>  </g>
+</svg>

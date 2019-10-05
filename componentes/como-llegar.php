@@ -4,7 +4,7 @@ $comoLlegar = <<<HTML
 
   <div class="como-llegar">
     <div class="como-llegar--content">
-      <p class="t--6 fuente-especial text--center t-color--base">Cómo llegar</p>
+      <p class="text--center"><img src="vista/images/componentes/como-llegar-v.svg" alt="¿Cómo llegar?" class="text--image"></p>
 
       <div class="flex align--center">
         <div class="flex--item">

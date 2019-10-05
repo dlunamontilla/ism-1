@@ -5,7 +5,8 @@ $maquillaje = <<<HTML
 <div class="maquillaje f-color--white">
   
   <div class="default">
-    <p class="text--center"><span class="fuente-especial t--6 t-color--base">Make up and beauty</span></p>
+    <p class="text--center"><img src="vista/images/componentes/make-up-v.svg" class="escala escala--v" alt="Make up and beauty"></p>
+
     <p class="uppercase text--center">Para que estés bien coqueta el día de mi boda te sugiero estas dos opciones para tu maquillaje:</p>
 
     <div class="grid grid--auto-fit grid--gap">

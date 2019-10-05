@@ -4,7 +4,9 @@ $dondeQuedarse = <<<HTML
 
 <div class="donde-quedarse">
   <div class="default">
-    <h2 class="t--6 text--center fuente-especial t-color--base">¿Dónde quedarse?</h2>
+    <!-- <h2 class="t--6 text--center fuente-especial t-color--base">¿Dónde quedarse?</h2> -->
+
+    <p class="text--center"><img src="vista/images/componentes/donde-quedarse-v.svg" alt="¿Dónde quedarse?" class="text--image"></p>
 
     <div class="tarjetas tarjetas--sin-foto">
       <div class="tarjetas--item">

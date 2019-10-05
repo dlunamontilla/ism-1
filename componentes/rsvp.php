@@ -2,8 +2,8 @@
 
 $rsvp = <<<HTML
 
-<div class="rsvp f-color--base padding padding--v">
-  <h2 class="fuente-especial uppercase t--5 t-color--white text--center">RSVP</h2>
+<div class="rsvp f-color--base padding padding--v fijar" id="rsvp">
+  <p class="text--center"><img src="vista/images/componentes/rsvp.svg" alt="RSVP" class="text--image"></p>
 
   $form
   

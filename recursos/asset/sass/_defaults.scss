@@ -4,6 +4,7 @@ $color-base: #0080d4 !default;
 
 // Proporciones:
 $width: 100% !default;
+$width-layer: calc(#{$width} - 20px) !default;
 $min-width: 100% !default;
 $max-width: 1200px !default;
 
@@ -61,7 +62,12 @@ a {
 
 .width {
   width: $width;
+
+  &--layer {
+    width: $width-layer;
+  }
 }
+
 .max {
   &--width {
     width: $max-width;
@@ -137,6 +143,10 @@ pre, code {
 
   &--right {
     text-align: right;
+  }
+
+  &--image {
+    max-width: $width-layer;
   }
 }
 
@@ -248,4 +258,8 @@ pre, code {
     border-radius: 4px;
     box-shadow: 0 0 2px rgba($color-base, 0.5);
   }
+}
+.escala {
+  max-width: 100%;
+  max-height: 100%;
 }

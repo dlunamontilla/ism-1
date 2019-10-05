@@ -19,7 +19,7 @@
     
     <!-- Estilos principales -->
     <link rel="stylesheet" href="vista/css/fonts.css?v=1.1">
-    <link rel="stylesheet" href="vista/css/style.css?v=1.14">
+    <link rel="stylesheet" href="vista/css/style.css?v=1.15">
 
     <!-- Favicon -->
     <link rel="icon" sizes="any" href="favicon.png" type="image/png">
@@ -41,7 +41,7 @@
     <li class="menu-horizontal--item"><a class="menu-horizontal--enlace" href="#">Wedding</a></li>
     <li class="menu-horizontal--item"><a class="menu-horizontal--enlace" href="#">Sitios de Interés</a></li>
     <li class="menu-horizontal--item"><a class="menu-horizontal--enlace" href="#">Registrarse</a></li>
-    <li class="menu-horizontal--item"><a class="menu-horizontal--enlace" href="#">RSVP</a></li>
+    <li class="menu-horizontal--item"><a class="menu-horizontal--enlace" href="#rsvp">RSVP</a></li>
   </ul>
 </nav>
 
@@ -58,7 +58,7 @@
     <li class="menu-movil--item"><a href="#" class="menu-movil--enlace">Wedding</a></li>
     <li class="menu-movil--item"><a href="#" class="menu-movil--enlace">Sitios de Interés</a></li>
     <li class="menu-movil--item"><a href="#" class="menu-movil--enlace">Regístrese</a></li>
-    <li class="menu-movil--item"><a href="#" class="menu-movil--enlace">RSVP</a></li>
+    <li class="menu-movil--item"><a href="#rsvp" class="menu-movil--enlace">RSVP</a></li>
   </ul>
 </nav>
   </div>
@@ -93,20 +93,27 @@
 			</div>
  -->
   <div class="banner">
-    <img class="banner__imagen" src="vista/images/0076__MG_0524.jpg" alt="Home">
+
+      <div class="banner--item">
+        <img class="banner__imagen" src="vista/images/banner_principal/foto-smartphone.jpg" alt="Banner principal">
+      </div>
+
+      <div class="banner--item">
+        <p class="t--6 text--center">Área de la imagen</p>
+      </div>
   </div>
   
-  <div class="logo--fondo"></div>
+  <!-- <div class="logo--fondo" id=""></div>
   
   
-  <div class="logo">
+  <div class="logo" id="">
     
     <div class="logo__image">
       <img class="logo__img" src="vista/images/Iniciales_2.png" alt="Logotipo">
-      <p class="logo__p logo__p--small">Save the Date</p>
+      <p class="logo__p logo__p--small">Save the Date</p> 
       <p class="logo__p logo__p--big">16 de noviembre de 2019</p>
     </div>
-  </div>
+  </div> -->
   
 </header>
 
@@ -115,7 +122,8 @@
 
   
 <div class="we fuente-especial">
-  <span>You <span class="t-color--secundario">+</span> Me <span class="t-color--secundario">=</span> We</span>
+  <!-- <span>You <span class="t-color--secundario">+</span> Me <span class="t-color--secundario">=</span> We</span> -->
+  <span class="text--center"><img src="vista/images/componentes/youmewe-v.svg" class="text--image" alt=""></span>
 </div>
 
 
@@ -153,16 +161,15 @@
 <div class="content--item content--A f-color--A">
   
   <div class="default">
-    <p class="uppercase m--0"><span class="t--big t--semi-bold">Después de vivir maravillosos momentos juntos, queremos oficializar nuestra relación</span></p>
-    <p class="m--0"><span class="fuente-especial t--5 t-color--base">Nos Casamos</span></p>
-    <p class="uppercase m--0"><span class="t--big t--semi-bold">Tenemos la inmensa alegría de invitarlos a nuestra boda que se llevará a cabo el día</span></p>
-    <p class="m--0"><span class="fuente-especial t--6 t-color--base">16 de noviembre de 2019</span></p>
+    <p class="uppercase"><span class="t--big t--semi-bold">Después de vivir maravillosos momentos juntos, queremos oficializar nuestra relación</span></p>
+    <p class="text--center"><img src="vista/images/componentes/noscasamos-v.svg" alt="Nos casamos" class="escala"></p>
+    <p class="uppercase"><span class="t--big t--semi-bold">Tenemos la inmensa alegría de invitarlos a nuestra boda que se llevará a cabo el día</span></p>
+    <p class="text--center"><img src="vista/images/componentes/16112019-v.svg" alt="16 de noviembre de 2019" class="escala"></p>
 
     <p class="uppercase m--0"><strong class="t--big">En la parroquia de San Pedro Apóstol</strong></p>
     <p class="uppercase m--0"><strong class="t--big">A las 04:00 PM</strong></p>
 
-    <p class="m--0"><span class="fuente-especial t--2">"El amor es el único que crece cuando se reparte"</span></p>
-    <p class="m--0"><span class="fuente-especial t--2">~Antoine de Saint ~ Exapery ~</span></p>
+    <p class="text--center"><img src="vista/images/componentes/texto-1-v.svg" alt="El amor es el único que crece cuando se reparte" class="escala"></p>
     
     <p class="decoracion t--center">
       <img src="vista/images/decoracion.png" alt="Decoración">
@@ -181,7 +188,7 @@
   
   <div class="como-llegar">
     <div class="como-llegar--content">
-      <p class="t--6 fuente-especial text--center t-color--base">Cómo llegar</p>
+      <p class="text--center"><img src="vista/images/componentes/como-llegar-v.svg" alt="¿Cómo llegar?" class="text--image"></p>
 
       <div class="flex align--center">
         <div class="flex--item">
@@ -222,7 +229,8 @@
 <div class="maquillaje f-color--white">
   
   <div class="default">
-    <p class="text--center"><span class="fuente-especial t--6 t-color--base">Make up and beauty</span></p>
+    <p class="text--center"><img src="vista/images/componentes/make-up-v.svg" class="escala escala--v" alt="Make up and beauty"></p>
+
     <p class="uppercase text--center">Para que estés bien coqueta el día de mi boda te sugiero estas dos opciones para tu maquillaje:</p>
 
     <div class="grid grid--auto-fit grid--gap">
@@ -261,8 +269,10 @@
 
   
 <div class="que-hacer padding padding--v f-color--A">
-  <p class="text--center"><span class="t--6 fuente-especial t-color--base">¿Qué hacer en Mérida?</span></p>
+  <!-- <p class="text--center"><span class="t--6 fuente-especial t-color--base">¿Qué hacer en Mérida?</span></p> -->
 
+  <p class="text--center"><img src="vista/images/componentes/que-hacer-v.svg" alt="¿Qué hacer en Mérida?" class="text--image"></p>
+  
   <div class="default tarjetas tarjetas--con-foto">
     <div class="tarjetas--item">
       <div class="tarjetas--images"><img class="tarjetas__img" src="vista/images/puente.jpg" alt="Foto"></div>
@@ -325,7 +335,9 @@
   
 <div class="donde-quedarse">
   <div class="default">
-    <h2 class="t--6 text--center fuente-especial t-color--base">¿Dónde quedarse?</h2>
+    <!-- <h2 class="t--6 text--center fuente-especial t-color--base">¿Dónde quedarse?</h2> -->
+
+    <p class="text--center"><img src="vista/images/componentes/donde-quedarse-v.svg" alt="¿Dónde quedarse?" class="text--image"></p>
 
     <div class="tarjetas tarjetas--sin-foto">
       <div class="tarjetas--item">
@@ -400,8 +412,8 @@
 
   
   
-<div class="rsvp f-color--base padding padding--v">
-  <h2 class="fuente-especial uppercase t--5 t-color--white text--center">RSVP</h2>
+<div class="rsvp f-color--base padding padding--v fijar" id="rsvp">
+  <p class="text--center"><img src="vista/images/componentes/rsvp.svg" alt="RSVP" class="text--image"></p>
 
   
 <!-- **naila20** -->
@@ -453,9 +465,7 @@
   <div class="default text--center">
     <img class="seccion-b--logo" src="vista/images/Iniciales_2.png" alt="Logo">
 
-    <p><span class="t--3 fuente-especial t-color--base">Nos encantaría que nos acompañen</span></p>
-    <p><span class="t--3 fuente-especial t-color--base">Y sean parte de este recuerdo tan especial.</span></p>
-
+    <p class="text--center"><img src="vista/images/componentes/texto-2-v.svg" alt="Nos encantaría que nos acompañen" class="text--image"></p>
     <img src="vista/images/decoracion.png" alt="Decoración">
   </div>
 

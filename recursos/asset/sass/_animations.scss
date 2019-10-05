@@ -5,3 +5,16 @@
     transform: rotateX(30deg);
   }
 }
+
+@keyframes fijar {
+  50% {
+    opacity: 0.5;
+    transform: scale(0.98);
+  }
+}
+
+.fijar {
+  &:target {
+    animation: 300ms ease fijar 1;
+  }
+}

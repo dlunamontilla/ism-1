@@ -9,20 +9,27 @@ $header = <<<HTML
   
   <!-- $carousel -->
   <div class="banner">
-    <img class="banner__imagen" src="vista/images/0076__MG_0524.jpg" alt="Home">
+
+      <div class="banner--item">
+        <img class="banner__imagen" src="vista/images/banner_principal/foto-smartphone.jpg" alt="Banner principal">
+      </div>
+
+      <div class="banner--item">
+        <p class="t--6 text--center">Área de la imagen</p>
+      </div>
   </div>
   
-  <div class="logo--fondo"></div>
+  <!-- <div class="logo--fondo" id=""></div>
   
   
-  <div class="logo">
+  <div class="logo" id="">
     
     <div class="logo__image">
       <img class="logo__img" src="vista/images/Iniciales_2.png" alt="Logotipo">
-      <p class="logo__p logo__p--small">Save the Date</p>
+      <p class="logo__p logo__p--small">Save the Date</p> 
       <p class="logo__p logo__p--big">16 de noviembre de 2019</p>
     </div>
-  </div>
+  </div> -->
   
 </header>
 

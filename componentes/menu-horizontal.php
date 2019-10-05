@@ -9,7 +9,7 @@ $menuHorizontal = <<<HTML
     <li class="menu-horizontal--item"><a class="menu-horizontal--enlace" href="#">Wedding</a></li>
     <li class="menu-horizontal--item"><a class="menu-horizontal--enlace" href="#">Sitios de Interés</a></li>
     <li class="menu-horizontal--item"><a class="menu-horizontal--enlace" href="#">Registrarse</a></li>
-    <li class="menu-horizontal--item"><a class="menu-horizontal--enlace" href="#">RSVP</a></li>
+    <li class="menu-horizontal--item"><a class="menu-horizontal--enlace" href="#rsvp">RSVP</a></li>
   </ul>
 </nav>
 
@@ -26,7 +26,7 @@ $menuHorizontal = <<<HTML
     <li class="menu-movil--item"><a href="#" class="menu-movil--enlace">Wedding</a></li>
     <li class="menu-movil--item"><a href="#" class="menu-movil--enlace">Sitios de Interés</a></li>
     <li class="menu-movil--item"><a href="#" class="menu-movil--enlace">Regístrese</a></li>
-    <li class="menu-movil--item"><a href="#" class="menu-movil--enlace">RSVP</a></li>
+    <li class="menu-movil--item"><a href="#rsvp" class="menu-movil--enlace">RSVP</a></li>
   </ul>
 </nav>
 HTML;
