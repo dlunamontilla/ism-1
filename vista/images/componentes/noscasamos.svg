@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.5584906"
-     inkscape:cx="164.46089"
-     inkscape:cy="17.557387"
+     inkscape:zoom="1.7414952"
+     inkscape:cx="114.4359"
+     inkscape:cy="34.35441"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -51,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -63,13 +63,13 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3244133px;line-height:1.25;font-family:'valentine vibes';-inkscape-font-specification:'valentine vibes';letter-spacing:0px;word-spacing:0px;fill:#0d002f;fill-opacity:1;stroke:none;stroke-width:0.93311024"
-       x="-37.017609"
+       x="-35.570652"
        y="133.25162"
        id="text3719"><tspan
          sodipodi:role="line"
          id="tspan3717"
-         x="-37.017609"
+         x="-35.570652"
          y="133.25162"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.93333244px;font-family:'valentine vibes';-inkscape-font-specification:'valentine vibes';fill:#0d002f;fill-opacity:1;stroke-width:0.93311024">Nos Casamos</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.93333244px;font-family:'valentine vibes';-inkscape-font-specification:'valentine vibes';fill:#0d002f;fill-opacity:1;stroke-width:0.93311024">Nuestra boda</tspan></text>
   </g>
 </svg>
