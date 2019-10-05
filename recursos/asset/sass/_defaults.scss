@@ -204,6 +204,10 @@ pre, code {
   text-transform: capitalize;
 }
 
+.unset {
+  text-transform: unset;
+}
+
 // Tamannos de fuentes:
 .t {
   &--small, &--pequenno {

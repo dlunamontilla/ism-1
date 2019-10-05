@@ -1,6 +1,6 @@
 <?php
 $carousel = <<<HTML
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="120000">
+<div id="carouselExampleIndicators" class="carousel slide fijar" data-ride="carousel" data-interval="120000">
 \t\t\t  <ol class="carousel-indicators">
 \t\t\t    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 \t\t\t    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>

@@ -1,7 +1,7 @@
 <?php
 $header = <<<HTML
 
-<header class="header">
+<header class="header fijar" id="home">
   
   <div class="default navegacion">
     $menuHorizontal

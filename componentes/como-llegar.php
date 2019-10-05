@@ -2,7 +2,7 @@
 
 $comoLlegar = <<<HTML
 
-  <div class="como-llegar">
+  <div class="como-llegar fijar" id="mapas">
     <div class="como-llegar--content">
       <p class="text--center"><img src="vista/images/componentes/como-llegar-v.svg" alt="¿Cómo llegar?" class="text--image"></p>
 
@@ -14,7 +14,7 @@ $comoLlegar = <<<HTML
           <p class="">CHOLUL, 97305 CHOLUL, YUC.</p>
 
           <!-- Botón -->
-          <p><a href="#" class="btn btn--enlace">RSVP</a></p>
+          <p><a href="#rsvp" class="btn btn--enlace">RSVP</a></p>
 
           <p class="text--center width">
             <img class="thumbnail thumbnail--small thumbnail--shadow" src="vista/images/google-maps.png" alt="Google Maps">
@@ -29,7 +29,7 @@ $comoLlegar = <<<HTML
           <p class="">X 17 CHOLUL, YUC</p>
 
           <!-- Botón -->
-          <p><a href="#" class="btn btn--enlace">RSVP</a></p>
+          <p><a href="#rsvp" class="btn btn--enlace">RSVP</a></p>
 
           <p class="text--center width">
             <img class="thumbnail thumbnail--small thumbnail--shadow" src="vista/images/google-maps.png" alt="Google Maps">

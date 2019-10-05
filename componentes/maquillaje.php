@@ -17,11 +17,11 @@ $maquillaje = <<<HTML
           </div>
         </div>
         <p>&nbsp;</p>
-        <p class="m--0 text--center uppercase"><span class="t-color--base t--semi-bold">@karenvivarbeauty</span></p>
+        <p class="m--0 text--center uppercase"><span class="t-color--base t--semi-bold"><a href="https://www.instagram.com/karenvivarbeauty/" target="_blank" rel="noopener noreferrer">@karenvivarbeauty</a></span></p>
         <p class="text--center t-color--ws-hover">WS: <span class="fas fa-phone"></span> 3318483026</p>
 
         <!-- Enlace tipo botón -->
-        <p><a href="#" class="btn btn--enlace uppercase">Contact</a></p>
+        <p><a href="https://www.instagram.com/karenvivarbeauty/" target="_blank" rel="noopener noreferrer" class="btn btn--enlace uppercase">Contact</a></p>
       </div>
 
       <div class="grid--item">
@@ -31,11 +31,11 @@ $maquillaje = <<<HTML
           </div>
         </div>
         <p>&nbsp;</p>
-        <p class="m--0 text--center uppercase"><span class="t-color--base t--semi-bold">@regina.vog</span></p>
+        <p class="m--0 text--center uppercase"><a href="https://www.instagram.com/reginavogmakeup/" target="_blank" rel="noopener noreferrer"><span class="t-color--base t--semi-bold">@regina.vog</span></a></p>
         <p class="text--center">&nbsp;</p>
 
         <!-- Enlace tipo botón -->
-        <p><a href="#" class="btn btn--enlace uppercase">Contact</a></p>
+        <p><a href="https://www.instagram.com/reginavogmakeup/" target="_blank" rel="noopener noreferrer" class="btn btn--enlace uppercase">Contact</a></p>
       </div>
 
     </div>

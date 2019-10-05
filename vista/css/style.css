@@ -150,6 +150,10 @@ pre, code {
   text-transform: capitalize;
 }
 
+.unset {
+  text-transform: unset;
+}
+
 .t--small, .t--pequenno {
   font-size: 0.85rem;
 }
@@ -633,26 +637,35 @@ header, section, article, footer {
   transition: 300ms ease;
   padding: 10px;
   background-color: #fafafa;
-  border: 1px solid white;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   width: calc(100% - 20px);
   margin: 0 auto;
 }
-.tarjetas--borde {
-  display: flex;
-  flex-wrap: wrap;
-  border: 1px solid;
-  justify-content: center;
-  align-items: center;
-  --padding: 30px;
+.tarjetas--borde, .tarjetas--sombra {
   padding-top: var(--padding);
   padding-bottom: var(--padding);
-  background-color: #f9f9f9;
+  background-color: #fcfbff;
   border: 1px solid white;
-  --xy: 5px;
-  box-shadow: var(--xy) var(--xy) 20px rgba(45, 25, 99, 0.4);
+  overflow: hidden;
+  --xy: 0;
+  --blur: 5px;
+  --color: rgba(45, 25, 99, 0.15);
+  box-shadow: var(--xy) var(--xy) var(--blur) var(--color);
   border-radius: 5px;
+}
+.tarjetas--borde {
+  --padding: 10px;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+}
+.tarjetas--sombra {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  --xy: 5px;
+  --blur: 15px;
+  --padding: 30px;
 }
 .tarjetas img {
   width: 100%;

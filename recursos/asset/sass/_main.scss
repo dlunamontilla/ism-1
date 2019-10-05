@@ -410,8 +410,6 @@ header, section, article, footer {
     transition: 300ms ease;
     padding: 10px;
     background-color: darken(white, 2);
-    border: 1px solid white;
-    box-shadow: 0 0 2px rgba(black, 0.2);
     border-radius: 4px;
 
     @media screen and (max-width: 600px) {
@@ -421,33 +419,48 @@ header, section, article, footer {
     margin: 0 auto;
   }
 
-  &--borde {
-    display: flex;
-    flex-wrap: wrap;
+  &--borde,
+  &--sombra {
 
-    border: 1px solid;
-
-    justify-content: center;
-    align-items: center;
-
-    --padding: 30px;
     padding-top: var(--padding);
     padding-bottom: var(--padding);
 
     // Apariencia:
-    background-color: #f9f9f9;
+    $background-color: lighten($color-base, 90);
+    background-color: $background-color;
     border: 1px solid white;
 
     $color: lighten($color-base, 15);
-    $color: rgba($color, 0.4);
+    $color: rgba($color, 0.15);
     $color: desaturate($color, 40);
+    overflow: hidden;
 
     // Sombras:
-    --xy: 5px;
-    box-shadow: var(--xy) var(--xy) 20px $color;
+    --xy: 0;
+    --blur: 5px;
+    --color: #{$color};
+
+    box-shadow: var(--xy) var(--xy) var(--blur) var(--color);
     border-radius: 5px;
   }
 
+  &--borde {
+    --padding: 10px;
+    
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+  }
+  
+  &--sombra {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    --xy: 5px;
+    --blur: 15px;
+    --padding: 30px;
+  }
   img {
     width: $width;
   }
