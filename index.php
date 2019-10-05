@@ -22,7 +22,7 @@
     
     <!-- Estilos principales -->
     <link rel="stylesheet" href="vista/css/fonts.css?v=1.1">
-    <link rel="stylesheet" href="vista/css/style.css?v=1.15">
+    <link rel="stylesheet" href="vista/css/style.css?v=1.16">
 
     <!-- Favicon -->
     <link rel="icon" sizes="any" href="favicon.png" type="image/png">

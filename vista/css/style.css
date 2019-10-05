@@ -222,6 +222,10 @@ pre, code {
   max-height: 100%;
 }
 
+.centrado--h {
+  margin: 0 auto;
+}
+
 .t-color--base {
   color: #0d002f;
 }
@@ -386,9 +390,6 @@ header, section, article, footer {
   background-color: white;
   color: #0d002f;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 6rem;
 }
 
