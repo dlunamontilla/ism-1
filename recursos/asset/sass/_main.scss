@@ -35,34 +35,77 @@ header, section, article, footer {
 .banner {
   position: relative;
   background-color: $logo-fondo;
-  display: flex;
+
+  --width: 55%;
+  $x2: 15%;
+  $diferencia: 100% - $x2;
 
   &--item {
-    position: relative;
-  }
+    position: absolute;
+    margin: auto;
+    top: 0; bottom: 0;
 
-  &--item {
     overflow: hidden;
+    height: 100%;
     
     &:first-of-type {
-      flex-basis: 50%;
-      flex-shrink: 0;
-      flex-grow: 1;
-
-      -webkit-clip-path: polygon(0% 0%, 70% 0%, 100% 100%, 0% 100%); // Soporte para navegadores antiguos
-      clip-path: polygon(0% 0%, 70% 0%, 100% 100%, 0% 100%);
+      width: var(--width);
+      left: 0; right: auto;
     }
-
-    &::last-of-type {
-      flex-basis: 35%;
-      flex-shrink: 1;
-
-      background-color: $logo-fondo;
+    
+    &:last-of-type {
+      -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, $x2 100%); // Soporte para navegadores antiguos
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, $x2 100%);
+      left: auto; right: 0;
+      
+      // Anchura del segundo ITEM:
+      width: 55%;
+      z-index: 2;
     }
+  }
 
+  $background-gradient: linear-gradient(80deg, transparent, $logo-fondo 20%), url("../images/banner_principal/foto-smartphone.jpg");
+  
+  &--gradient {
+    background-image: $background-gradient;
+  }
+
+  &--logo {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    left: auto; right: 10px;
+    width: $diferencia;
+
+    .logo__p--big {
+      @media screen and (max-width: 980px) {
+        font-size: 1.4rem;
+      }
+    }
+
+    z-index: 2;
+  }
+
+  &--blur,
+  &--logo {
+    position: absolute; 
+    margin: auto;
+    top: 0; bottom: 0;
+
+  }
+  
+  &--blur {
+    filter: blur(13px);
+    // background-color: $logo-fondo;
+    left: 0; right: 0;
+    background-image: $background-gradient;
+
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, $x2 100%); // Soporte para navegadores antiguos
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, $x2 100%);
+  
+    z-index: 0;
   }
 
   &, &__imagen {
@@ -332,6 +375,11 @@ header, section, article, footer {
   background-color: $instagram-3;
   background-image: linear-gradient(180deg, $instagram-1, $instagram-2, $instagram-3);
   
+  &--scale {
+    display: block;
+    position: relative;
+    max-height: 80%;
+  }
   &--circle {
     display: flex;
     align-items: center;
@@ -624,8 +672,8 @@ header, section, article, footer {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  max-width: $max-width;
-  width: $width-layer;
+  max-width: $width-layer;
+  width: 50%;
   height: 500px;
 
   &__iframe {

@@ -138,6 +138,10 @@ pre, code {
   text-decoration: underline;
 }
 
+.none {
+  display: none !important;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -306,28 +310,61 @@ header, section, article, footer {
 .banner {
   position: relative;
   background-color: #ebedec;
-  display: flex;
+  --width: 55%;
 }
 .banner--item {
-  position: relative;
-}
-.banner--item {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
 }
 .banner--item:first-of-type {
-  flex-basis: 50%;
-  flex-shrink: 0;
-  flex-grow: 1;
-  -webkit-clip-path: polygon(0% 0%, 70% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 70% 0%, 100% 100%, 0% 100%);
+  width: var(--width);
+  left: 0;
+  right: auto;
 }
-.banner--item::last-of-type {
-  flex-basis: 35%;
-  flex-shrink: 1;
-  background-color: #ebedec;
+.banner--item:last-of-type {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 15% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 15% 100%);
+  left: auto;
+  right: 0;
+  width: 55%;
+  z-index: 2;
+}
+.banner--gradient {
+  background-image: linear-gradient(80deg, transparent, #ebedec 20%), url("../images/banner_principal/foto-smartphone.jpg");
+}
+.banner--logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: auto;
+  right: 10px;
+  width: 85%;
+  z-index: 2;
+}
+@media screen and (max-width: 980px) {
+  .banner--logo .logo__p--big {
+    font-size: 1.4rem;
+  }
+}
+.banner--blur, .banner--logo {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+.banner--blur {
+  filter: blur(13px);
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(80deg, transparent, #ebedec 20%), url("../images/banner_principal/foto-smartphone.jpg");
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 15% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 15% 100%);
+  z-index: 0;
 }
 .banner, .banner__imagen {
   position: absolute;
@@ -571,6 +608,11 @@ header, section, article, footer {
   background-color: #e8009d;
   background-image: linear-gradient(180deg, #f6ce00, #ee6d5a, #e8009d);
 }
+.instagram--scale {
+  display: block;
+  position: relative;
+  max-height: 80%;
+}
 .instagram--circle {
   display: flex;
   align-items: center;
@@ -795,8 +837,8 @@ header, section, article, footer {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  max-width: 1200px;
-  width: calc(100% - 20px);
+  max-width: calc(100% - 20px);
+  width: 50%;
   height: 500px;
 }
 .mapas__iframe {

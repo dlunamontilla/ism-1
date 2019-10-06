@@ -7,32 +7,59 @@ $quehacer = <<<HTML
 
   <p class="text--center"><img src="vista/images/componentes/que-hacer-v.svg" alt="¿Qué hacer en Mérida?" class="text--image"></p>
   
+  <div class="default padding t--semi-bold">
+      <p>Mérida, conocida como la ciudad blanca tiene una rica herencia maya y colonial.</p>
+      <p>Si vas a pasar unos días aquí te damos algunos tips de lo que puedes hacer y que visitar.</p>
+  </div>
+
   <div class="default tarjetas tarjetas--con-foto">
     <div class="tarjetas--item tarjetas--borde">
       <div class="tarjetas--images"><img class="tarjetas__img" src="vista/images/puente.jpg" alt="Foto"></div>
-
-      <p class="uppercase t--semi-bold">Se insertará texto con lugares turísticos de interés y botón de acción para que te lleve.</p>
-      <p><a href="#" class="btn btn--enlace uppercase">+Info</a></p>
-
-      $rrss
+      
+      <p class="uppercase text--left m-0"><span class="t--semi-bold">Qué visitar:</span></p>
+      <ul>
+        <li>La Catedral</li>
+        <li>Teatro Peón Contreras</li>
+        <li>Paseo Montejo</li>
+        <li>Gran Museo del Mundo Maya</li>
+        <li>Parque Las Américas</li>
+        <li>Puerto Progreso</li>
+        <li>DZIBILCHALTÚN</li>
+        <li>Izamal</li>
+        <li>Uxmal</li>
+      </ul>
+      
+      <p><a href="#" class="btn btn--enlace uppercase" id="btnVisita">+Info</a></p>
     </div>
 
     <div class="tarjetas--item tarjetas--borde">
       <div class="tarjetas--images"><img class="tarjetas__img" src="vista/images/puente.jpg" alt="Foto"></div>
 
-      <p class="uppercase t--semi-bold">Se insertará texto con lugares turísticos de interés y botón de acción para que te lleve.</p>
+      <p class="uppercase t--semi-bold">Centros comerciales:</p>
+      <ul>
+        <li><span>The Harbor</span></li>
+        <li><span>La Isla</span></li>
+        <li><span>Altabrisa y Galerías</span></li>
+      </ul>
+
       <p><a href="#" class="btn btn--enlace uppercase">+Info</a></p>
 
-      $rrss
     </div>
 
     <div class="tarjetas--item tarjetas--borde">
       <div class="tarjetas--images"><img class="tarjetas__img" src="vista/images/puente.jpg" alt="Foto"></div>
 
-      <p class="uppercase t--semi-bold">Se insertará texto con lugares turísticos de interés y botón de acción para que te lleve.</p>
+      <p class="uppercase t--semi-bold">Restaurantes:</p>
+      <ul>
+        <li><span>La Chaya Maya</span></li>
+        <li><span>Colono's</span></li>
+        <li><span>Eladio's</span></li>
+        <li><span>Wayan'e</span></li>
+        <li><span>Kiiwik</span></li>
+      </ul>
+
       <p><a href="#" class="btn btn--enlace uppercase">+Info</a></p>
 
-      $rrss
     </div>
 
   </div>

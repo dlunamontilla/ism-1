@@ -191,6 +191,10 @@ pre, code {
   }
 }
 
+// No mostrar
+.none {
+  display: none !important;
+}
 // Transformaciones de texto:
 .uppercase {
   text-transform: uppercase;
