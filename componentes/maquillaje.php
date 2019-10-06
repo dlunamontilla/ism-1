@@ -89,6 +89,8 @@ $maquillaje = <<<HTML
 
     </div>
 
+    <hr>
+    
     <h2 class="t--3 text--center padding padding-h">Barberías</h2>
     <div class="grid grid--auto-fit grid--gap">
       <!-- Grid Item 1 -->

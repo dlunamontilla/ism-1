@@ -24,7 +24,7 @@ header, section, article, footer {
 
 .header {
   min-height: $min-height;
-  overflow:hidden;
+  overflow:visible;
   background-color: rgba($color-base, 0.1);
 
   // Responsive:
@@ -40,26 +40,57 @@ header, section, article, footer {
   $x2: 15%;
   $diferencia: 100% - $x2;
 
+  --altura: 450px;
+  padding-top: calc(var(--altura) - 30px);
   &--item {
-    position: absolute;
-    margin: auto;
-    top: 0; bottom: 0;
-
-    overflow: hidden;
-    height: 100%;
+    transition: 300ms ease;
+    overflow: visible;
     
+    @media screen and (min-width: 1024px) {
+      margin: auto;
+      top: 0; bottom: 0;
+      position: absolute;
+      min-height: 100%;
+    }
+
+    @media screen and (max-width: 1023px) {
+      position: relative;
+    }
+
     &:first-of-type {
-      width: var(--width);
-      left: 0; right: auto;
+      @media screen and (min-width: 1024px) {
+        width: var(--width);
+        left: 0; right: auto;
+      }
+
+      @media screen and (max-width: 1023px) {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+      }
+      
     }
     
     &:last-of-type {
-      -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, $x2 100%); // Soporte para navegadores antiguos
-      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, $x2 100%);
-      left: auto; right: 0;
+
+      @media screen and (min-width: 1024px) {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, $x2 100%); // Soporte para navegadores antiguos
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, $x2 100%);
+        width: 55%;
+        left: auto; right: 0;
+      }
+
+      @media screen and (max-width: 1023px) {
+        position: absolute;
+        margin: auto;
+        top: 0; bottom: auto;
+        left: 0; right: 0;
+
+        min-height: var(--altura);
+        width: 100%;
+      }
       
       // Anchura del segundo ITEM:
-      width: 55%;
       z-index: 2;
     }
   }
@@ -67,7 +98,13 @@ header, section, article, footer {
   $background-gradient: linear-gradient(80deg, transparent, $logo-fondo 20%), url("../images/banner_principal/foto-smartphone.jpg");
   
   &--gradient {
-    background-image: $background-gradient;
+    @media screen and (min-width: 1024px) {
+      background-image: $background-gradient;
+    }
+
+    @media screen and (max-width: 1023px) {
+      max-width: 100%;
+    }
   }
 
   &--logo {
@@ -76,13 +113,21 @@ header, section, article, footer {
     justify-content: center;
     align-items: center;
 
-    left: auto; right: 10px;
-    width: $diferencia;
+    
+    @media screen and (min-width: 1024px) {
+      left: auto; right: 10px;
+      width: $diferencia;
+    }
 
     .logo__p--big {
       @media screen and (max-width: 980px) {
         font-size: 1.4rem;
       }
+    }
+
+    @media screen and (max-width: 1023px) {
+      max-width: $width-layer;
+      padding-top: 40px;
     }
 
     z-index: 2;
@@ -92,37 +137,73 @@ header, section, article, footer {
   &--logo {
     position: absolute; 
     margin: auto;
-    top: 0; bottom: 0;
+    bottom: 0;
+
+    @media screen and (min-width: 1024px) {
+      top: 0;
+    }
+
+    @media screen and (max-width: 1023px) {
+      top: 20px;
+      left: 0; right: 0;
+    }
 
   }
-  
-  &--blur {
-    filter: blur(13px);
-    // background-color: $logo-fondo;
-    left: 0; right: 0;
-    background-image: $background-gradient;
 
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, $x2 100%); // Soporte para navegadores antiguos
+  &--blur {
+    left: 0; right: 0;
+    
+    
+    @media screen and (min-width: 1024px) {
+      filter: blur(13px);
+      -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, $x2 100%); // Soporte para navegadores antiguos
       clip-path: polygon(0% 0%, 100% 0%, 100% 100%, $x2 100%);
-  
+      background-image: $background-gradient;
+    }
+
+    @media screen and (max-width: 1023px) {
+      // $background-image: linear-gradient(90deg, transparent, $logo-fondo 0%), url("../images/banner_principal/foto-smartphone.jpg");
+
+      // // Imagen de fondo:
+      // background-image: $background-image;
+
+      $logo-fondo: #f0f0f0;
+      background-color: $logo-fondo;
+      width: 100%;
+    }
+
     z-index: 0;
   }
 
   &, &__imagen {
-    position: absolute;
-    margin: auto;
-    left: 0; right: 0;
-    top: 0; bottom: 0;
+    @media screen and (min-width: 1024px) {
+      position: absolute;
+      margin: auto;
+      left: 0; right: 0;
+      top: 0; bottom: 0;
+    }
   }
 
   &__imagen {
     display: block;
-    position: absolute;
     object-fit: cover;
     object-position: 20% top;
 
     width: 100%;
-    height: 100%;
+    
+    @media screen and (min-width: 1024px) {
+      position: absolute;
+      margin: auto;
+      left: 0; right: 0;
+      top: 0; bottom: 0;
+      height: 100%;
+    }
+
+    @media screen and (max-width: 1023px) {
+      position: relative;
+      height: auto;
+    }
+
   }
 }
 
@@ -177,11 +258,17 @@ header, section, article, footer {
 .we {
   position: relative;
   margin: 0;
-  min-height: 190px;
+  min-height: 240px;
   background-color: white;
   color: $color-base;
   text-align: center;
   
+  @media screen and (max-width: 600px) {
+    min-height: 120px;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
   font: {
     size: 6rem;
