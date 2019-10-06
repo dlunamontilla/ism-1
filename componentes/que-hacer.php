@@ -35,7 +35,7 @@ $quehacer = <<<HTML
     <div class="tarjetas--item tarjetas--borde">
       <div class="tarjetas--images"><img class="tarjetas__img" src="vista/images/puente.jpg" alt="Foto"></div>
 
-      <p class="uppercase t--semi-bold">Centros comerciales:</p>
+      <p class="uppercase t--semi-bold m-0">Centros comerciales:</p>
       <ul>
         <li><span>The Harbor</span></li>
         <li><span>La Isla</span></li>
@@ -49,7 +49,7 @@ $quehacer = <<<HTML
     <div class="tarjetas--item tarjetas--borde">
       <div class="tarjetas--images"><img class="tarjetas__img" src="vista/images/puente.jpg" alt="Foto"></div>
 
-      <p class="uppercase t--semi-bold">Restaurantes:</p>
+      <p class="uppercase t--semi-bold m-0">Restaurantes:</p>
       <ul>
         <li><span>La Chaya Maya</span></li>
         <li><span>Colono's</span></li>

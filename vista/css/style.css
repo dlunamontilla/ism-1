@@ -312,7 +312,7 @@ header, section, article, footer {
   background-color: #ebedec;
   --width: 55%;
   --altura: 450px;
-  padding-top: calc(var(--altura) - 30px);
+  padding-top: calc(var(--altura) - 10px);
 }
 .banner--item {
   transition: 300ms ease;
@@ -938,18 +938,21 @@ header, section, article, footer {
   margin-right: auto;
   margin-top: 20px;
   max-width: calc(100% - 20px);
-  width: 50%;
+  width: 100%;
+  max-width: 650px;
   height: 500px;
+  padding-top: 20px;
+  border-top: 1px solid #d59a00;
 }
 .mapas__iframe {
+  display: block;
+  position: relative;
   border: 0;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  margin: 0 auto;
   height: 100%;
-  width: 100%;
+  width: calc(100% - 20px);
+  border: 1px solid white;
+  box-shadow: 0 0 2px silver;
 }
 
 .rrss {

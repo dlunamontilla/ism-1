@@ -41,7 +41,7 @@ header, section, article, footer {
   $diferencia: 100% - $x2;
 
   --altura: 450px;
-  padding-top: calc(var(--altura) - 30px);
+  padding-top: calc(var(--altura) - 10px);
   &--item {
     transition: 300ms ease;
     overflow: visible;
@@ -435,7 +435,7 @@ header, section, article, footer {
 // Grid:
 .grid {
   display: grid;
-
+  
   &--auto-fit {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
@@ -760,15 +760,22 @@ header, section, article, footer {
   margin-right: auto;
   margin-top: 20px;
   max-width: $width-layer;
-  width: 50%;
+  width: 100%;
+  max-width: 650px;
   height: 500px;
 
+  padding-top: 20px;
+  border-top: 1px solid $color-secundario;
+
   &__iframe {
+    display: block;
+    position: relative;
     border: 0;
-    margin: auto;
-    left: 0; right: 0;
-    top: 0; bottom: 0;
+    margin: 0 auto;
     height: 100%;
-    width: 100%;
+    width: $width-layer;
+
+    border: 1px solid white;
+    box-shadow: 0 0 2px silver;
   }
 }
