@@ -13,21 +13,27 @@ $form = <<<HTML
       <span class="rsvp__label--text uppercase">Nombre:</span>
     </label>
 
-    <label class="rsvp__label" for="asistire" class="input--text">
-      <input class="rsvp__label--input" type="text" name="asistire" id="asistire">
-      <span class="rsvp__label--text uppercase">Asistiré:</span>
-    </label>
-
-    <label class="rsvp__label" for="noPodre" class="input--text">
-      <input class="rsvp__label--input" type="text" name="noPodre" id="noPodre">
-      <span class="rsvp__label--text uppercase">Lamentablemente, no podré:</span>
-    </label>
-
     <label class="rsvp__label" for="nAsistentes" class="input--text">
       <input class="rsvp__label--input" type="text" name="nAsistentes" id="nAsistentes" maxlength="2">
       <span class="rsvp__label--text uppercase">Número de asistentes:</span>
     </label>
 
+    <div class="group padding padding--v">
+      <label for="asistire-r" class="group--options">
+        <input type="radio" name="asistire-noasistire" id="asistire-r">
+        <i class="far fa-circle unchecked"></i>
+        <i class="far fa-check-circle checked"></i>
+        <span class="radio--text">Asistiré</span>
+      </label>
+      
+      <label for="no-asistire" class="group--options">
+        <input type="radio" name="asistire-noasistire" id="no-asistire">
+        <i class="far fa-circle unchecked"></i>
+        <i class="far fa-check-circle checked"></i>
+        <span class="radio--text">Lamentablemente, no podré</span>
+      </label>
+    </div>
+    
     <div class="group--button">
       <button type="submit" class="btn btn--submit">Enviar</button>
     </div>

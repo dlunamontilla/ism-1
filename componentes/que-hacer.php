@@ -14,7 +14,7 @@ $quehacer = <<<HTML
 
   <div class="default tarjetas tarjetas--con-foto">
     <div class="tarjetas--item tarjetas--borde">
-      <div class="tarjetas--images"><img class="tarjetas__img" src="vista/images/puente.jpg" alt="Foto"></div>
+      <div class="tarjetas--images"><img class="tarjetas__img" src="vista/images/tarjetas/de-ciudad-maya-a-zona-arqueologica-dzibilchaltun.jpg" alt="Foto"></div>
       
       <p class="uppercase text--left m-0"><span class="t--semi-bold">Qué visitar:</span></p>
       <ul>
@@ -29,11 +29,11 @@ $quehacer = <<<HTML
         <li>Uxmal</li>
       </ul>
       
-      <p><a href="#" class="btn btn--enlace uppercase" id="btnVisita">+Info</a></p>
+      <p><a href="#ventana" class="btn btn--enlace uppercase" id="btnVisita">+Info</a></p>
     </div>
 
     <div class="tarjetas--item tarjetas--borde">
-      <div class="tarjetas--images"><img class="tarjetas__img" src="vista/images/puente.jpg" alt="Foto"></div>
+      <div class="tarjetas--images"><img class="tarjetas__img" src="vista/images/tarjetas/plano-full-Harbor-merida-2018.jpg" alt="Foto"></div>
 
       <p class="uppercase t--semi-bold m-0">Centros comerciales:</p>
       <ul>
@@ -42,12 +42,12 @@ $quehacer = <<<HTML
         <li><span>Altabrisa y Galerías</span></li>
       </ul>
 
-      <p><a href="#" class="btn btn--enlace uppercase">+Info</a></p>
+      <p><a href="#ventana" id="centros-comerciales" class="btn btn--enlace uppercase">+Info</a></p>
 
     </div>
 
     <div class="tarjetas--item tarjetas--borde">
-      <div class="tarjetas--images"><img class="tarjetas__img" src="vista/images/puente.jpg" alt="Foto"></div>
+      <div class="tarjetas--images"><img class="tarjetas__img" src="vista/images/tarjetas/la-chaya-maya-restaurant.jpg" alt="Foto"></div>
 
       <p class="uppercase t--semi-bold m-0">Restaurantes:</p>
       <ul>
@@ -58,7 +58,7 @@ $quehacer = <<<HTML
         <li><span>Kiiwik</span></li>
       </ul>
 
-      <p><a href="#" class="btn btn--enlace uppercase">+Info</a></p>
+      <p><a href="#ventana" id="restaurantes" class="btn btn--enlace uppercase">+Info</a></p>
 
     </div>
 

@@ -17,7 +17,7 @@ $comoLlegar = <<<HTML
           <p><a href="#rsvp" class="btn btn--enlace">RSVP</a></p>
 
           <p class="text--center width">
-            <img class="thumbnail thumbnail--small thumbnail--shadow" src="vista/images/google-maps.png" alt="Google Maps">
+            <img class="thumbnail thumbnail--small thumbnail--shadow" src="vista/images/misa.jpeg" alt="Google Maps">
           </p>
 
         </div>
@@ -32,16 +32,18 @@ $comoLlegar = <<<HTML
           <p><a href="#rsvp" class="btn btn--enlace">RSVP</a></p>
 
           <p class="text--center width">
-            <img class="thumbnail thumbnail--small thumbnail--shadow" src="vista/images/google-maps.png" alt="Google Maps">
+            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.114667682329!2d-89.57380378506737!3d21.028097385998723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56771479e0a39f%3A0x1152caa81b57b1ce!2sCity%20Express%20Junior%20M%C3%A9rida%20Altabrisa!5e0!3m2!1ses-419!2sve!4v1570249143782!5m2!1ses-419!2sve" target="recepcion-map" class="mapas--enlace">
+              <img class="thumbnail thumbnail--small thumbnail--shadow" src="vista/images/google-maps.png" alt="Google Maps">
+            </a>
           </p>
-
+          
+          <div class="mapas none" id="GoogleMaps">
+            <iframe class="mapas__iframe" src="" allowfullscreen="" name="recepcion-map" id="recepcion-map"></iframe>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="mapas">
-      <iframe class="mapas__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.114667682329!2d-89.57380378506737!3d21.028097385998723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56771479e0a39f%3A0x1152caa81b57b1ce!2sCity%20Express%20Junior%20M%C3%A9rida%20Altabrisa!5e0!3m2!1ses-419!2sve!4v1570249143782!5m2!1ses-419!2sve" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-    </div>
   </div>
 
 HTML;

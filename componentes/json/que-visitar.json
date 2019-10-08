@@ -1,0 +1,50 @@
+{
+  "content" : [
+    {
+      "title" : "La Catedral",
+      "content": "La Catedral, el centro y demás iglesias alrededor. Los viernes a las 8:30 hay espectáculo de videomapping en catedral, la primera  iglesia en todo Latinoamérica."
+    },
+
+    {
+      "title" : "Paseo Montejo",
+      "content" : "Teatro Peón Contreras: Checa cartelera, es temporada de conciertos de la Sinfónica, es único."
+    },
+
+    {
+      "title" : "Paseo Montejo",
+      "content": "Paseo Montejo, es una caminata hasta el Monumento a la Patria. Detente donde quieras, pero en especial prueba una nieve de coco en sorbetería Colón para descansar por que puede ser largo el recorrido."
+    },
+  
+    {
+      "title" : "Gran Museo del Mundo Maya",
+      "content": "Gran Museo del Mundo Maya, a las 8:30 tienen un espectáculo de luz y sonido. "
+    },
+  
+    {
+      "title" : "Parque Las Américas",
+      "content" : "Parque Las Américas: Ve de noche, son 4 parques con diseño maya e iluminación vegetal."
+    },
+  
+    {
+      "title" : "Puerto Progreso",
+      "content" : "Puerto Progreso, playa a 15 minutos de Mérida, puedes ver el muelle más largo del mundo y comer donde se te antoje. Recomendaciones: Eladio's y Crabster."
+    },
+  
+    {
+      "title" : "DZIBILCHALTÚN",
+      "content" : "DZIBILCHALTÚN, es una zona arqueológica y tiene un cenote, está a 20 minutos de Mérida. "
+    },
+  
+    {
+      "title" : "Izamal",
+      "content" : "Izamal, pueblo mágico a una hora de la ciudad, visitas el convento de San antonio Padua, pídele con fé si no haz encontrado el amor. "
+    },
+  
+    {
+      "title" : "Uxmal",
+      "content" : "Uxmal, zona arquelógica con espectáculo de luz  sonido a las 6pm."
+    }
+  ]
+
+
+}

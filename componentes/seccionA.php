@@ -22,7 +22,6 @@ $seccionA = <<< HTML
 
     <p class="text--image text--center uppercase t--big t--semi-bold">Al salir de la iglesia tienes transporte a la fiesta.</p>
     <p class="t--big uppercase t--semi-bold text--center"><i>¡Esperamos tu asistencia y confirmación!</i></p>
-    <p class="text--center"><img src="vista/images/componentes/texto-1-v.svg" alt="El amor es el único que crece cuando se reparte" class="escala"></p>
     
     <p class="decoracion t--center">
       <img src="vista/images/decoracion.png" alt="Decoración">

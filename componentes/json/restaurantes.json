@@ -1,0 +1,28 @@
+{
+  "content" : [
+    {
+      "title" : "La Chaya Maya",
+      "content" : "Comida yucateca, está en el centro, es el más turístico."
+    },
+
+    {
+      "title" : "Colono's",
+      "content" : "Aparte de comida 100% yucateca es una experiencia de como come un Yucateco, es local, no es turístico."
+    },
+
+    {
+      "title" : "Eladio's",
+      "content" : "Pides cerveza y te sirven comida yucateca. Mientras tomes, ellos traen salbutes, panuchos, papadzules, etc. "
+    },
+
+    {
+      "title" : "Wayan'e",
+      "content" : "Tortas y tacos de cochinita, lechón, cascatan, etc. Es comida rápida, para desyunar si se te hizo poquito tarde."
+    },
+
+    {
+      "title" : "Kiiwik",
+      "content" : "Desayunos desde temprano. Cierran a las 12pm."
+    }
+  ]
+}

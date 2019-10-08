@@ -24,16 +24,6 @@ $header = <<<HTML
       </div>
   </div>
   
-  <!-- <div class="logo--fondo" id=""></div>
-  
-  
-  <div class="logo" id="">
-    
-    <div class="logo__image">
-      <img class="logo__img" src="vista/images/Iniciales_2.png" alt="Logotipo">
-    </div>
-  </div> -->
-  
 </header>
 
 HTML;
