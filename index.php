@@ -37,6 +37,8 @@
 
     </main>
 
+    <?= $modal; ?>
+    
     <?= $javascript; ?>
 
   </body>

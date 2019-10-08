@@ -706,6 +706,10 @@ header, section, article, footer {
     height: auto;
     margin: 0 auto;
   }
+
+  &--block {
+    display: block;
+  }
 }
 
 // Contacto:
@@ -760,12 +764,21 @@ header, section, article, footer {
   margin-right: auto;
   margin-top: 20px;
   max-width: $width-layer;
+  height: 500px;
   width: 100%;
   max-width: 650px;
-  height: 500px;
+  
+  @media screen and (min-width: 600px) {
+    max-width: 450px;
+    max-height: 350px;
+  }
+  
+  @media screen and (max-width: 599px) {
+    
+  }
 
   padding-top: 20px;
-  border-top: 1px solid $color-secundario;
+  // border-top: 1px solid $color-secundario;
 
   &__iframe {
     display: block;
@@ -777,5 +790,107 @@ header, section, article, footer {
 
     border: 1px solid white;
     box-shadow: 0 0 2px silver;
+  }
+
+  &--enlace {
+    border: 0;
+    outline: medium none;
+    text-decoration: none;
+    transition: 300ms ease;
+
+    &:hover {
+      text-decoration: none;
+      opacity: 0.7;
+    }
+
+    &:active {
+      transform: scale(0.98);
+      transition: none;
+    }
+  }
+}
+
+// Ventanas emergentes:
+.ventana {
+  display: none;
+
+  &:target {
+    display: block;
+  }
+
+  &:target &--content {
+    animation: 300ms ease desplegar 1;
+  }
+
+  &--modal {
+    position: fixed;
+    margin: auto;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background-color: rgba($color-base, 0.6);
+    overflow: auto;
+
+    z-index: 1000;
+
+  }
+
+  &--header {
+    padding: 10px;
+    position: fixed;
+    margin: auto;
+    left: 0; right: 0;
+    top: 0; bottom: auto;
+
+    z-index: 2;
+  }
+
+  &--content {
+    $intensidad: 89;
+    margin: 20px auto;
+    position: relative;
+
+    padding: 20px;
+
+    $color: lighten($color-base, $intensidad);
+    background-color: $color;
+
+    border: 1px solid white;
+    $color: darken($color, $intensidad - 10);
+    $color: rgba($color, 0.1);
+
+    box-shadow: 0 0 10px darken($color, 30);
+
+    max-width: 800px;
+    border-radius: 5px;
+
+    z-index: 1;
+  }
+
+  &--salir {
+    color: black;
+    position: relative;
+    
+    --diametro: 40px;
+    height: var(--diametro);
+    width: var(--diametro);
+
+    margin-left: auto;
+    margin-right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    border-radius: 3px;
+    transition: 300ms ease;
+    line-height: 0;
+    cursor: pointer;
+    color: white;
+    background-color: rgba($color-base, 0.3);
+
+    &:hover {
+      background-color: rgba(red, 0.7);
+      color: white;
+    }
   }
 }

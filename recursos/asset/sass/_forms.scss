@@ -162,5 +162,71 @@
 
       padding: 2px 0;
     }
+
   }
+
+  // Radio Button
+  &--options {
+    --height: 35px;
+    transition: 300ms ease;
+
+    border: 1px solid $color-secundario;
+    position: relative;
+    height: var(--height);
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: calc(var(--height) / 2);
+
+    &-selected {
+      $color: darken($color-secundario, 5);
+      background-color: rgba($color, 0.7);
+    }
+
+    &:hover {
+      &:not(.group--options-selected)  {
+        background-color: rgba($color-secundario, 0.2);
+      }
+    }
+
+    font: {
+      variant: small-caps;
+      size: 1rem;
+    }
+    padding: 0 20px;
+
+    &:not(:first-of-type) {
+      margin-left: 10px;
+    }
+
+    [type="radio"] {
+      display: none;
+
+      &:checked ~ * {
+        color: white;
+      }
+    }
+
+    span {
+      transition: 300ms ease;
+    }
+
+  }
+}
+
+[type="radio"] {
+  & ~ .checked {
+    display: none;
+  }
+  
+  &:checked ~ .unchecked {
+    display: none;
+  }
+
+  &:checked ~ .checked {
+    display: inline;
+  }
+
 }
