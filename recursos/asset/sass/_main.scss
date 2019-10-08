@@ -556,9 +556,7 @@ header, section, article, footer {
 
   &--borde,
   &--sombra {
-
-    padding-top: var(--padding);
-    padding-bottom: var(--padding);
+    padding: 10px;
 
     // Apariencia:
     $background-color: lighten($color-base, 90);
@@ -596,6 +594,7 @@ header, section, article, footer {
     --blur: 15px;
     --padding: 30px;
   }
+
   img {
     width: $width;
   }
@@ -613,6 +612,22 @@ header, section, article, footer {
   &--images {
     margin-bottom: 40px;
     border-bottom: 16px solid darken($instagram-3, 10);
+  }
+
+  &--logo {
+    width: $width-layer;
+    max-width: 400px;
+  }
+
+  &--padding {
+    padding: 10px;
+  }
+
+  &--enlace {
+    text-decoration: none;
+    outline: medium none;
+    display: block;
+    width: 100%;
   }
 }
 

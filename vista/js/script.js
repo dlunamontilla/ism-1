@@ -105,29 +105,6 @@
 
 }(window, document));
 
-
-// Uso de jQuery
-// (function (window, document, $) {
-
-//   $(document).ready(function () {
-//     jQuery("#content-modal").load("componentes/json-content.php?que-visitar");
-
-//     $( "#a" ).load( "article.html" );
-//   });
-
-// }(window, document, jQuery));
-
-//  Probando función:
-// jQuery( "#content-modal" ).load("componentes/json-content.php?que-visitar");
-
-// let peticion = new dlAjax("#content-modal", {
-//   "loading" : "cargando",
-//   "success" : "success",
-//   "error" : "error",
-//   "state" : 3
-// });
-
-
 $("#btnVisita").click(function () {
   // $("#content-modal").load("componentes/json-content.php?que-visitar");
   $("#content-modal").load("componentes/html/que-visitar.html");

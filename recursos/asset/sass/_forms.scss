@@ -172,13 +172,15 @@
 
     border: 1px solid $color-secundario;
     position: relative;
-    height: var(--height);
+    min-height: var(--height);
     color: white;
     cursor: pointer;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     border-radius: calc(var(--height) / 2);
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     &-selected {
       $color: darken($color-secundario, 5);
@@ -198,7 +200,15 @@
     padding: 0 20px;
 
     &:not(:first-of-type) {
-      margin-left: 10px;
+      
+      @media screen and (min-width: 420px) {
+        margin-left: 10px;
+      }
+    }
+
+    @media screen and (max-width: 419px) {
+      display: flex;
+      justify-content: flex-start;
     }
 
     [type="radio"] {

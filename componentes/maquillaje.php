@@ -15,12 +15,12 @@ $maquillaje = <<<HTML
       <div class="grid--item">
         <div class="instagram instagram--circle">
           <div class="instagram--circle-small">
-            <img src="vista/images/karen-perfil.jpg" alt="Karen Instagram">
+            <img src="vista/images/perfiles/karenvivarbeauty.jpg" alt="Karen Vivar Beauty">
           </div>
         </div>
         <p>&nbsp;</p>
-        <p class="m--0 text--center uppercase"><span class="t-color--base t--semi-bold"><a href="https://www.instagram.com/karenvivarbeauty/" target="_blank" rel="noopener noreferrer">@karenvivarbeauty</a></span></p>
-        <p class="text--center t-color--ws-hover">WS: <span class="fas fa-phone"></span> 3318483026</p>
+        <p class="m--0 text--center uppercase"><a href="https://www.instagram.com/karenvivarbeauty/" target="_blank" rel="noopener noreferrer"><span class="t-color--base t--semi-bold">@karenvivarbeauty</span></a></p>
+        <p class="text--center">Karen Vivar Beauty  </p>
 
         <!-- Enlace tipo botón -->
         <p><a href="https://www.instagram.com/karenvivarbeauty/" target="_blank" rel="noopener noreferrer" class="btn btn--enlace uppercase">Contact</a></p>
@@ -55,21 +55,6 @@ $maquillaje = <<<HTML
 
         <!-- Enlace tipo botón -->
         <p><a href="https://www.instagram.com/beautytogo.mid/" target="_blank" rel="noopener noreferrer" class="btn btn--enlace uppercase">Contact</a></p>
-      </div>
-
-      <!-- Grid Item 4 -->
-      <div class="grid--item">
-        <div class="instagram instagram--circle">
-          <div class="instagram--circle-small">
-            <img src="vista/images/perfiles/karenvivarbeauty.jpg" alt="Karen Vivar Beauty">
-          </div>
-        </div>
-        <p>&nbsp;</p>
-        <p class="m--0 text--center uppercase"><a href="https://www.instagram.com/karenvivarbeauty/" target="_blank" rel="noopener noreferrer"><span class="t-color--base t--semi-bold">@karenvivarbeauty</span></a></p>
-        <p class="text--center">Karen Vivar Beauty  </p>
-
-        <!-- Enlace tipo botón -->
-        <p><a href="https://www.instagram.com/karenvivarbeauty/" target="_blank" rel="noopener noreferrer" class="btn btn--enlace uppercase">Contact</a></p>
       </div>
 
       <!-- Grid Item 5 -->

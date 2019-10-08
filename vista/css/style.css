@@ -788,8 +788,7 @@ header, section, article, footer {
   margin: 0 auto;
 }
 .tarjetas--borde, .tarjetas--sombra {
-  padding-top: var(--padding);
-  padding-bottom: var(--padding);
+  padding: 10px;
   background-color: #fcfbff;
   border: 1px solid white;
   overflow: hidden;
@@ -827,6 +826,19 @@ header, section, article, footer {
 .tarjetas--images {
   margin-bottom: 40px;
   border-bottom: 16px solid #b5007a;
+}
+.tarjetas--logo {
+  width: calc(100% - 20px);
+  max-width: 400px;
+}
+.tarjetas--padding {
+  padding: 10px;
+}
+.tarjetas--enlace {
+  text-decoration: none;
+  outline: medium none;
+  display: block;
+  width: 100%;
 }
 
 .timer {
@@ -1245,13 +1257,15 @@ header, section, article, footer {
   transition: 300ms ease;
   border: 1px solid #d59a00;
   position: relative;
-  height: var(--height);
+  min-height: var(--height);
   color: white;
   cursor: pointer;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   border-radius: calc(var(--height) / 2);
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-variant: small-caps;
   font-size: 1rem;
   padding: 0 20px;
@@ -1262,8 +1276,16 @@ header, section, article, footer {
 .group--options:hover:not(.group--options-selected) {
   background-color: rgba(213, 154, 0, 0.2);
 }
-.group--options:not(:first-of-type) {
-  margin-left: 10px;
+@media screen and (min-width: 420px) {
+  .group--options:not(:first-of-type) {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 419px) {
+  .group--options {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 .group--options [type="radio"] {
   display: none;
