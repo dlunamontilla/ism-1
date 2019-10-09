@@ -9,12 +9,12 @@ $form = <<<HTML
   <!-- Formularios -->
   <form action="" method="post">
     <label class="rsvp__label" for="nombre" class="input--text">
-      <input class="rsvp__label--input" type="text" name="nombre" id="nombre">
+      <input class="rsvp__label--input" type="text" name="nombre" id="nombre" required="">
       <span class="rsvp__label--text uppercase">Nombre:</span>
     </label>
 
     <label class="rsvp__label" for="nAsistentes" class="input--text">
-      <input class="rsvp__label--input" type="text" name="nAsistentes" id="nAsistentes" maxlength="2">
+      <input class="rsvp__label--input" type="text" name="nAsistentes" id="nAsistentes" maxlength="2" required="" pattern="[0-9]+">
       <span class="rsvp__label--text uppercase">Número de asistentes:</span>
     </label>
 

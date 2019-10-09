@@ -9,7 +9,7 @@ $maquillaje = <<<HTML
 
     <p class="uppercase text--center">Sugerencias de maquillaje y peinado:</p>
 
-    <h2 class="t--3 text--center padding padding-h">Maquillaje</h2>
+    <h2 class="t--2 text--center padding padding-h">Maquillaje</h2>
     <div class="grid grid--auto-fit grid--gap">
       <!-- Grid Item 1 -->
       <div class="grid--item">
@@ -77,7 +77,7 @@ $maquillaje = <<<HTML
     <br>
     <br>
     <hr>
-    <h2 class="t--3 text--center padding padding-h">Barberías</h2>
+    <h2 class="t--2 text--center padding padding-h">Barberías</h2>
     <div class="grid grid--auto-fit grid--gap">
       <!-- Grid Item 1 -->
       <div class="grid--item">

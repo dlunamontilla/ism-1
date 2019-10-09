@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.1061936"
-     inkscape:cx="490.7031"
-     inkscape:cy="53.973857"
+     inkscape:zoom="0.61571153"
+     inkscape:cx="-5.4179157"
+     inkscape:cy="-70.339074"
      inkscape:document-units="mm"
      inkscape:current-layer="g4749"
      showgrid="false"
@@ -51,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -64,28 +64,32 @@
        id="g4749"
        style="fill:#606060;fill-opacity:1"
        transform="matrix(0.90244245,0,0,0.90244245,19.418841,58.899926)">
-      <text
-         id="text3719"
-         y="63.309605"
-         x="-39.463558"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.21629524px;line-height:1.25;font-family:'valentine vibes';-inkscape-font-specification:'valentine vibes';letter-spacing:0px;word-spacing:0px;fill:#606060;fill-opacity:1;stroke:none;stroke-width:0.68040735"
-         xml:space="preserve"><tspan
-           id="tspan4725"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.0948px;font-family:'valentine vibes';-inkscape-font-specification:'valentine vibes';fill:#606060;fill-opacity:1;stroke-width:0.68040735"
-           y="63.309605"
+      <g
+         id="g825"
+         style="fill:#001740;fill-opacity:1">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.21629524px;line-height:1.25;font-family:'valentine vibes';-inkscape-font-specification:'valentine vibes';letter-spacing:0px;word-spacing:0px;fill:#001740;fill-opacity:1;stroke:none;stroke-width:0.68040735"
            x="-39.463558"
-           sodipodi:role="line">Nos encantaría que nos acompañen</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.21629524px;line-height:1.25;font-family:'valentine vibes';-inkscape-font-specification:'valentine vibes';letter-spacing:0px;word-spacing:0px;fill:#606060;fill-opacity:1;stroke:none;stroke-width:0.68040735"
-         x="-54.654926"
-         y="81.140526"
-         id="text4731"><tspan
-           sodipodi:role="line"
-           x="-54.654926"
+           y="63.309605"
+           id="text3719"><tspan
+             sodipodi:role="line"
+             x="-39.463558"
+             y="63.309605"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.0948px;font-family:'valentine vibes';-inkscape-font-specification:'valentine vibes';fill:#001740;fill-opacity:1;stroke-width:0.68040735"
+             id="tspan4725">Nos encantaría que nos acompañen</tspan></text>
+        <text
+           id="text4731"
            y="81.140526"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.0948px;font-family:'valentine vibes';-inkscape-font-specification:'valentine vibes';fill:#606060;fill-opacity:1;stroke-width:0.68040735"
-           id="tspan4729">Y sean parte de este recuerdo tan especial.</tspan></text>
+           x="-54.654926"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.21629524px;line-height:1.25;font-family:'valentine vibes';-inkscape-font-specification:'valentine vibes';letter-spacing:0px;word-spacing:0px;fill:#001740;fill-opacity:1;stroke:none;stroke-width:0.68040735"
+           xml:space="preserve"><tspan
+             id="tspan4729"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.0948px;font-family:'valentine vibes';-inkscape-font-specification:'valentine vibes';fill:#001740;fill-opacity:1;stroke-width:0.68040735"
+             y="81.140526"
+             x="-54.654926"
+             sodipodi:role="line">Y sean parte de este recuerdo tan especial.</tspan></text>
+      </g>
     </g>
     <flowRoot
        xml:space="preserve"

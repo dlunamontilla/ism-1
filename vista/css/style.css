@@ -695,9 +695,20 @@ header, section, article, footer {
 
 .grid {
   display: grid;
+  overflow: hidden;
 }
 .grid--auto-fit {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(var(--anchura), 1fr));
+}
+@media screen and (min-width: 340px) {
+  .grid--auto-fit {
+    --anchura: 300px;
+  }
+}
+@media screen and (max-width: 339px) {
+  .grid--auto-fit {
+    --anchura: 200px;
+  }
 }
 .grid--item {
   display: flex;
@@ -710,11 +721,21 @@ header, section, article, footer {
 }
 
 .instagram {
-  --diametro: 300px;
   width: var(--diametro);
   height: var(--diametro);
+  transition: 300ms ease height, 300ms ease transition width;
   background-color: #e8009d;
   background-image: linear-gradient(180deg, #f6ce00, #ee6d5a, #e8009d);
+}
+@media screen and (min-width: 340px) {
+  .instagram {
+    --diametro: 300px;
+  }
+}
+@media screen and (max-width: 339px) {
+  .instagram {
+    --diametro: 200px;
+  }
 }
 .instagram--scale {
   display: block;
@@ -901,6 +922,25 @@ header, section, article, footer {
 .rsvp {
   background-image: url("../images/carousel/0066.jpg");
   background-size: auto 100%;
+  background-position: center;
+}
+.rsvp::before {
+  content: "";
+  display: block;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  transition: 300ms ease;
+  z-index: 0;
+}
+@media screen and (max-width: 800px) {
+  .rsvp::before {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }
 
 .seccion-b--logo {
@@ -1056,6 +1096,18 @@ header, section, article, footer {
   color: white;
 }
 
+.text--regalo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(13, 0, 47, 0.1);
+}
+
 .rrss {
   padding: 10px;
 }
@@ -1195,6 +1247,16 @@ header, section, article, footer {
   border: 0;
   width: 100%;
   z-index: 1;
+}
+.rsvp__label--input:invalid {
+  border: 0;
+  box-shadow: none;
+  border-bottom: 2px solid rgba(255, 0, 0, 0.8);
+}
+.rsvp__label--input:valid {
+  border: 0;
+  box-shadow: none;
+  border-bottom: 2px solid rgba(0, 255, 0, 0.8);
 }
 .rsvp__label--input:focus ~ .rsvp__label--text {
   padding-bottom: 35px;

@@ -91,6 +91,22 @@
       width: 100%;
       z-index: 1;
 
+      &:invalid {
+        border: 0;
+        box-shadow: none;
+
+        $color: red;
+        border-bottom: 2px solid rgba($color, 0.8);
+      }
+
+      &:valid {
+        border: 0;
+        box-shadow: none;
+
+        $color: #00ff00;
+        border-bottom: 2px solid rgba($color, 0.8);
+      }
+
       &:focus ~ .rsvp__label--text {
         &::before {
           opacity: 1;

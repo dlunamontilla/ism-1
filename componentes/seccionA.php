@@ -17,9 +17,11 @@ $seccionA = <<< HTML
     <!-- <p class="text--image text--center uppercase t--big t--semi-bold">La misa será el día 16 de noviembre, 2019 en la iglesia de San Pedro Apóstol a las 4:00 pm. Al terminar nos encantaría sigas festejando con nosotros.</p> -->
     <p class="text--center"><img src="vista/images/componentes/16112019-v.svg" alt="16 de noviembre de 2019" class="escala"></p>
 
-    <!-- <p class="uppercase m--0"><strong class="t--big">En la parroquia de San Pedro Apóstol</strong></p> -->
-    <!-- <p class="uppercase m--0"><strong class="t--big">A las 04:00 PM</strong></p> -->
+    <p class="uppercase m--0"><strong class="t--big">En la parroquia de San Pedro Apóstol</strong></p>
+    <p class="uppercase m--0"><strong class="t--big">A las 04:00 PM</strong></p>
 
+    <br>
+    
     <p class="text--image text--center uppercase t--big t--semi-bold">Al salir de la iglesia tienes transporte a la fiesta.</p>
     <p class="t--big uppercase t--semi-bold text--center"><i>¡Esperamos tu asistencia y confirmación!</i></p>
     
