@@ -2,7 +2,7 @@
 define("DEV", "development");
 define("PRO", "produccion");
 
-function JavaScript( string $type ) : string {
+function JavaScript( string $type ) {
   $content = "";
 
   if ( empty(trim($type)) )
