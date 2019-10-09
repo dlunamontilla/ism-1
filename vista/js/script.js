@@ -128,3 +128,86 @@ $("#salir").click(function () {
   history.back();
   $("body").removeClass("overflow--hidden");
 });
+
+// Uso de la biblioteca moment.js para calcular
+// las fechas:
+(function (window, document) {
+  let
+    boda = moment('2019-11-16 16:00:00-06:00'),
+    hoy = moment();
+
+
+  // Realizando pruebas con JavaScript puro:
+  let dias = 0, horas = 0, minutos = 0, segundos = 0;
+
+  let
+    numberDias = document.querySelector("#dias-n"),
+    numberHoras = document.querySelector("#horas-n"),
+    numberMinutos = document.querySelector("#minutos-n"),
+    numberSegundos = document.querySelector("#segundos-n");
+
+  const digitos = function ( digito ) {
+    if ( digito === undefined )
+      return "00";
+
+    if ( 0 <= digito && digito < 10 )
+      return `0${digito}`;
+
+    return `${digito}`;
+  }
+
+  const fCronometro = ( dg, timer ) => {
+    if ( dg === undefined )
+      return;
+
+    if ( timer === undefined )
+      return;
+
+    
+
+    // Comprobar los elementos:
+    if ( numberDias === null || numberHoras === null || numberMinutos === null || numberSegundos === null )
+      return;
+
+    // Capturar fecha actual:
+    hoy = moment();
+
+    // Días:
+    dias = boda.diff(hoy, 'days');
+    
+    // Horas:
+    horas = boda.diff(hoy, 'hours');
+    horas = horas % 24;
+    
+    // Minutos:
+    minutos = boda.diff(hoy, 'minutes');
+    minutos = minutos % 60;
+    
+    // Segundos:
+    segundos = boda.diff(hoy, 'seconds');
+    segundos = segundos % 60;
+    
+    if ( dias <= 0 && horas <= 0 && minutos <= 0 && segundos <= 0 ) {
+      // Detener el reloj:
+      clearInterval(timer);
+      
+      // Establecer los valores en cero(0):
+      dias = horas = minutos = segundos = 0;
+    }
+
+    // Actualizar fechas:
+    numberDias.textContent = dg( dias );
+    numberHoras.textContent = dg( horas );
+    numberMinutos.textContent = dg( minutos );
+    numberSegundos.textContent = dg( segundos );
+
+    return;
+  };
+  
+  let timer = setInterval(function () {
+    fCronometro( digitos, timer );
+  }, 1000);
+
+  
+
+}(window, document));

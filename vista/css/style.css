@@ -625,7 +625,11 @@ header, section, article, footer {
 .timer {
   background-color: #0d002f;
   color: white;
-  padding-top: 17%;
+}
+.timer__svg {
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
 }
 
 .como-llegar {
@@ -839,12 +843,6 @@ header, section, article, footer {
   outline: medium none;
   display: block;
   width: 100%;
-}
-
-.timer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .donde-quedarse {
