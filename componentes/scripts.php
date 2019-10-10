@@ -44,5 +44,5 @@ function JavaScript( string $type ) {
 
 // Valores a modificar:
 $javascript = "\t<script src=\"recursos/extensiones/js/moment.min.js\"></script>";
-$javascript .= JavaScript( DEV );
+$javascript .= JavaScript( PRO );
 ?>

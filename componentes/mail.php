@@ -1,9 +1,7 @@
 <?php
-// fernanda.schnierle@gmail.com
-
 $from = 'From: Invitación <boda2019@gonzaloyfernanda.com>' . "\r\n";
 
-$para = 'davidlunamontilla@outlook.com';
+$para = 'fernanda.schnierle@gmail.com';
 $titulo = 'Gonzalo & Fernanda';
 $mensaje = "Mensaje de la cabecera";
 $cabeceras = "";
@@ -11,7 +9,7 @@ $cabeceras = "";
 // Cabeceras:
 $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
 $cabeceras .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
-$cabeceras .= 'To: David E Luna M <davidlunamontilla@outlook.com>' . "\r\n";
+$cabeceras .= 'To: Fernanda Schnier <fernanda.schnierle@gmail.com>' . "\r\n";
 $cabeceras .= $from;
 
 $box ='box-sizing: border-box;';
