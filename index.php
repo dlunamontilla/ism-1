@@ -33,6 +33,9 @@
 
     <!-- Favicon -->
     <link rel="icon" sizes="any" href="favicon.png" type="image/png">
+
+    <!-- Recaptcha de Google -->
+    <script src="https://www.google.com/recaptcha/api.js?explicit&es=es" async defer></script>
   </head>
   
   <body>

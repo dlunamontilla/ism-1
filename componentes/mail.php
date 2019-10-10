@@ -1,6 +1,5 @@
 <?php
 // fernanda.schnierle@gmail.com
-// boda2019@gonzaloyfernanda.com
 
 $from = 'From: Invitación <boda2019@gonzaloyfernanda.com>' . "\r\n";
 
@@ -31,6 +30,52 @@ if ( file_exists($rutaImagen) ) {
   $imagen = "<img src='data:image/png;base64," . $imdata . "' " . $attr . " />";
 }
 
+$nombres = "";
+$asistentes = "";
+$asistir = "";
+
+
+// Validación de Google:
+$gcaptcha = '<div class="g-recaptcha" data-sitekey="6LeBh7MUAAAAAGooVKR0lComTLxSw11hrlzcbU4e"></div>';
+
+function enviarCorreo( &$__nombres, &$__asistentes, &$__asistir ) {
+  $__asistir = "Lamentablemente no podré asistir";
+
+  if ( !isset($_POST['nombre']) || !isset($_POST['nAsistentes']) || !isset($_POST['asistire-noasistire']) )
+    return false;
+
+  if ( empty(trim($_POST['nombre'])) || empty(trim($_POST['nAsistentes'])) || empty(trim($_POST['asistire-noasistire'])) )
+    return false;
+
+  // Nombres del invitado:
+  $__nombres = $_POST['nombre'];
+  $__nombres = htmlentities($__nombres);
+  
+  // Asistentes, incluyendo al invitado:
+  $__asistentes = $_POST['nAsistentes'];
+  
+  // Obtener los datos de la confirmación de asistencia:
+  $__asistir = $_POST['asistire-noasistire'];
+  $__asistir = htmlentities($__asistir);
+
+  if ( !is_numeric($__asistentes) )
+    return false;
+
+  if ( $__asistentes < 1 )
+    return false;
+
+  if ( $__asistentes === 1 ) {
+    $__asistentes = $__asistentes . " persona";
+    return true;
+  }
+
+  $__asistentes = $__asistentes . " personas";
+  return true;
+}
+
+// Mostrar resultados:
+$continuar = enviarCorreo( $nombres, $asistentes, $asistir );
+
 $html = <<<HTML
 
 <!DOCTYPE html>
@@ -56,9 +101,11 @@ $html = <<<HTML
 
         <h3 style="font-size: 1.5rem; font-variant: small-caps; margin: 0 auto; margin-top: 30px;">Datos del Invitado</h3>
         <ul style="padding: 0 30px; margin: 0;">
-          <li style="font-variant: small-caps"><span><strong>Nombres: </strong><br>David E Luna M</span></li>
-          <li style="margin-top: 10px; font-variant: small-caps"><span><strong>Participantes: </strong><br>10 personas</span></li>
+          <li style="font-variant: small-caps"><span><strong>Nombres: </strong><br>$nombres</span></li>
+          <li style="margin-top: 10px; font-variant: small-caps"><span><strong>Participantes: </strong><br>$asistentes</span></li>
         </ul>
+
+        <h3 style="font-variant: small-caps">$asistir</h3>
     </div>
 
   </main>
@@ -69,8 +116,15 @@ HTML;
 
 $mensaje = $html;
 
-// echo $mensaje;
+$confirmar = false;
 
-echo "Resultado: " . mail($para, $titulo, $mensaje, $cabeceras);
+if ( $continuar )
+  echo $mensaje;
 
+// Realizar pruebas de ejecución de la función:
+
+// echo "Resultado: " . mail($para, $titulo, $mensaje, $cabeceras);
+
+if ( $confirmar )
+  echo "Gracias por confirmar";
 ?>
