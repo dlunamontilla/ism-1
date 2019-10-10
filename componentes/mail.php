@@ -58,8 +58,8 @@ HTML;
 
 $mensaje = $html;
 
-echo $mensaje;
+// echo $mensaje;
 
-// echo "Resultado: " . mail($para, $titulo, $mensaje, $cabeceras);
+echo "Resultado: " . mail($para, $titulo, $mensaje, $cabeceras);
 
 ?>
