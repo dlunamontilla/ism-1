@@ -18,3 +18,9 @@
     animation: 300ms ease fijar 1;
   }
 }
+
+@keyframes intermitencia {
+  50% {
+    background-color: rgba(white, 0.8);
+  }
+}

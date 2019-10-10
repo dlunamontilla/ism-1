@@ -12,6 +12,13 @@ $modal = <<<HTML
   </div>
 
 </div>
+
+<div class="aviso none" id="aviso">
+  <div class="aviso--content" id="aviso-content">
+    <p class="m-0" id="parrafo-content">Enviando confirmación, por favor, espere...</p>
+  </div>
+</div>
+
 HTML;
 
 ?>

@@ -142,12 +142,6 @@ $confirmar = false;
 if ( $continuar )
   $confirmar = mail($para, $titulo, $mensaje, $cabeceras);
 
-// Realizar pruebas de ejecución de la función:
-
-// echo "Resultado: " . mail($para, $titulo, $mensaje, $cabeceras);
-
-echo $confirmar;
-
 if ( $confirmar )
   echo "Gracias por confirmarnos";
 ?>

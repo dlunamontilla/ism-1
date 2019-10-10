@@ -1108,6 +1108,47 @@ header, section, article, footer {
   border: 1px solid rgba(13, 0, 47, 0.1);
 }
 
+.aviso {
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aviso--content {
+  background-color: rgba(255, 255, 255, 0.97);
+  color: #0d002f;
+  height: 100px;
+  width: calc(100% - 20px);
+  max-width: 300px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 10px;
+  transition: 300ms ease color;
+  color: #008000;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+.aviso--content-esperando {
+  animation: 1000ms ease intermitencia infinite;
+  color: #0d002f;
+  font-variant: normal;
+  font-weight: normal;
+}
+.aviso--content p {
+  text-align: center;
+  width: 100%;
+}
+
 .rrss {
   padding: 10px;
 }
@@ -1174,6 +1215,11 @@ header, section, article, footer {
   animation: 300ms ease fijar 1;
 }
 
+@keyframes intermitencia {
+  50% {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
 .btn {
   --height: 40px;
   transition: 300ms ease;

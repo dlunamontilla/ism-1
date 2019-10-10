@@ -210,4 +210,53 @@ $("#salir").click(function () {
 
   
 
+
+
 }(window, document));
+
+// Formulario de invitación:
+(function (window, document, $) {
+  
+  $(document).ready(function () {
+    $("#formInvitacion").submit(function ( e ) {
+      e.preventDefault();
+
+      // Activar el aviso:
+      $("#aviso").removeClass("none");
+      $("#aviso-content").addClass("aviso--content-esperando");
+
+      let url = this.action;
+
+      $.ajax({
+        type: "POST",
+        url: url,
+        data: $("#formInvitacion").serialize(),
+
+        success: function ( data ) {
+          $("#parrafo-content").html(data);
+          $("#aviso-content").removeClass("aviso--content-esperando");
+          $("#formInvitacion")[0].reset();
+          
+          setTimeout(() => {
+            $("#aviso").addClass("none");
+          }, 5000);
+        }
+      });
+
+    });
+  });
+
+}(window, document, jQuery))
+
+  // $('#btn-ingresar').click(function(){
+  //     var url = "datos_login.php";
+  //     $.ajax({                        
+  //        type: "POST",                 
+  //        url: url,                     
+  //        data: $("#formulario").serialize(), 
+  //        success: function(data)             
+  //        {
+  //          $('#resp').html(data);               
+  //        }
+  //    });
+  // });

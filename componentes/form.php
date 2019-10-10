@@ -9,7 +9,7 @@ $form = <<<HTML
   <p class="uppercase t--semi-bold t-color--white">Por favor, confirmar tu asistencia antes del 01 de noviembre:</p>
 
   <!-- Formularios -->
-  <form action="componentes/mail.php" method="post">
+  <form action="componentes/mail.php" method="post" id="formInvitacion">
     <label class="rsvp__label" for="nombre" class="input--text">
       <input class="rsvp__label--input" type="text" name="nombre" id="nombre" required="">
       <span class="rsvp__label--text uppercase">Nombre:</span>
@@ -39,7 +39,7 @@ $form = <<<HTML
     <div class="google-captcha">$gcaptcha</div>
 
     <div class="group--button">
-      <button type="submit" class="btn btn--submit">Enviar</button>
+      <button type="submit" class="btn btn--submit" id="btnInvitacion">Enviar</button>
     </div>
   </form>
 </div>

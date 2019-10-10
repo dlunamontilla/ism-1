@@ -735,7 +735,7 @@
   <p class="uppercase t--semi-bold t-color--white">Por favor, confirmar tu asistencia antes del 01 de noviembre:</p>
 
   <!-- Formularios -->
-  <form action="componentes/mail.php" method="post">
+  <form action="componentes/mail.php" method="post" id="formInvitacion">
     <label class="rsvp__label" for="nombre" class="input--text">
       <input class="rsvp__label--input" type="text" name="nombre" id="nombre" required="">
       <span class="rsvp__label--text uppercase">Nombre:</span>
@@ -765,7 +765,7 @@
     <div class="google-captcha"><div class="g-recaptcha" data-sitekey="6LeU07wUAAAAAHfA4agiyU3z66vwkYpObO5nWbvM"></div></div>
 
     <div class="group--button">
-      <button type="submit" class="btn btn--submit">Enviar</button>
+      <button type="submit" class="btn btn--submit" id="btnInvitacion">Enviar</button>
     </div>
   </form>
 </div>
@@ -817,7 +817,14 @@
     Esperando contenido...
   </div>
 
-</div>    
+</div>
+
+<div class="aviso none" id="aviso">
+  <div class="aviso--content" id="aviso-content">
+    <p class="m-0" id="parrafo-content">Enviando confirmación, por favor, espere...</p>
+  </div>
+</div>
+    
     	<script src="recursos/extensiones/js/moment.min.js"></script>
 		<script src="recursos/extensiones/js/jquery-3.4.1.js"></script>
 		<script src="recursos/extensiones/js/bootstrap/popper.min.js" crossorigin="anonymous"></script>
