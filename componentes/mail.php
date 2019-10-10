@@ -38,6 +38,27 @@ $asistir = "";
 // Validación de Google:
 $gcaptcha = '<div class="g-recaptcha" data-sitekey="6LeBh7MUAAAAAGooVKR0lComTLxSw11hrlzcbU4e"></div>';
 
+if ( !isset($_POST['g-recaptcha-response']))
+  return;
+
+
+if ( empty(trim($_POST['g-recaptcha-response'])) )
+  return;
+
+// Almacenar los datos del CAPTCHA provenientes del formulario:
+$captcha = (string) $_POST['g-recaptcha-response'];
+
+// Obtener una respuesta de Google vía JSON:
+$response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LeU07wUAAAAAAAx12-FFdFN2J-s6Iv9gtnXrsCx&response=$captcha");
+
+// Obtener la respuesta indicando si el usuario es o no un robot:
+$resultado = json_decode($response, TRUE);
+
+// Si no se logra comprobar que la persona es un robot
+// no se enviará el correo:   
+if ( !$resultado['success'] )
+    return;
+
 function enviarCorreo( &$__nombres, &$__asistentes, &$__asistir ) {
   $__asistir = "Lamentablemente no podré asistir";
 
@@ -49,10 +70,10 @@ function enviarCorreo( &$__nombres, &$__asistentes, &$__asistir ) {
 
   // Nombres del invitado:
   $__nombres = $_POST['nombre'];
-  $__nombres = htmlentities($__nombres);
+  $__nombres = (string) htmlentities($__nombres);
   
   // Asistentes, incluyendo al invitado:
-  $__asistentes = $_POST['nAsistentes'];
+  $__asistentes = (int) $_POST['nAsistentes'];
   
   // Obtener los datos de la confirmación de asistencia:
   $__asistir = $_POST['asistire-noasistire'];
@@ -119,12 +140,14 @@ $mensaje = $html;
 $confirmar = false;
 
 if ( $continuar )
-  echo $mensaje;
+  $confirmar = mail($para, $titulo, $mensaje, $cabeceras);
 
 // Realizar pruebas de ejecución de la función:
 
 // echo "Resultado: " . mail($para, $titulo, $mensaje, $cabeceras);
 
+echo $confirmar;
+
 if ( $confirmar )
-  echo "Gracias por confirmar";
+  echo "Gracias por confirmarnos";
 ?>
