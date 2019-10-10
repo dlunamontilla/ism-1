@@ -17,19 +17,19 @@
     <title>Gonzalo & Fernanda</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="recursos/extensiones/css/bootstrap.min.css" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="recursos/extensiones/css/bootstrap.min.css" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Fuentes -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Arizonia&display=swap&subset=latin-ext" rel="stylesheet"> -->
-
+    <link href="https://fonts.googleapis.com/css?family=Arizonia&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet"> 
     <!-- Font Asesome -->
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="recursos/extensiones/otras/fontawesome-free-5.5.0-web/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="recursos/extensiones/otras/fontawesome-free-5.5.0-web/css/all.css"> -->
     
     <!-- Estilos principales -->
-    <link rel="stylesheet" href="vista/css/fonts.css?v=1.1">
-    <link rel="stylesheet" href="vista/css/style.css?v=1.23">
+    <!-- <link rel="stylesheet" href="vista/css/fonts.css?v=1.1"> -->
+    <link rel="stylesheet" href="vista/css/style.css?v=2.0">
 
     <!-- Favicon -->
     <link rel="icon" sizes="any" href="favicon.png" type="image/png">
