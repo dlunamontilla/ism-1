@@ -1,5 +1,5 @@
 <?php
-$from = 'From: Invitación <boda2019@gonzaloyfernanda.com>' . "\r\n";
+$from = 'From: Boda2019 <boda2019@gonzaloyfernanda.com>' . "\r\n";
 
 $para = 'invitacion@gonzaloyfernanda.com';
 $titulo = 'Gonzalo & Fernanda';
