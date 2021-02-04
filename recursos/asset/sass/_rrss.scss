@@ -5,12 +5,14 @@
     display: flex;
     list-style: none;
 
-    &--item, & {
+    &--item,
+    & {
       padding: 0;
       margin: 0;
     }
 
-    &--item, &--enlace {
+    &--item,
+    &--enlace {
       position: relative;
       display: flex;
     }
@@ -39,7 +41,7 @@
       i {
         transition: 300ms ease;
       }
-      
+
       &:hover {
         text-decoration: none;
 

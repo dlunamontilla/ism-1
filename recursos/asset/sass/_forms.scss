@@ -17,7 +17,7 @@
     color: white;
     padding: 0 10px;
     border-radius: calc(var(--height) / 2);
-    
+
     &:hover {
       color: white;
       background-color: lighten($color-base, 13);
@@ -58,22 +58,25 @@
   &__label {
     --height: 70px;
     $padding-focused: 35px;
-    
+
     display: block;
     position: relative;
 
     height: var(--height);
 
-    &, &--input {
+    &,
+    &--input {
       display: block;
     }
-    
+
     &--input,
     &--text {
       position: absolute;
       margin: auto;
-      left: 0; right: 0;
-      top: auto; bottom: 0;
+      left: 0;
+      right: 0;
+      top: auto;
+      bottom: 0;
       color: white;
       padding-bottom: 5px;
       font-size: 0.9rem;
@@ -82,7 +85,7 @@
     &--input {
       background-color: transparent;
       background-image: none;
-      border-left: 0; 
+      border-left: 0;
       border-right: 0;
       border-top: 0;
       border-bottom: 1px solid transparent;
@@ -134,21 +137,23 @@
         padding-bottom: $padding-focused;
       }
 
-      &::before, &::after {
+      &::before,
+      &::after {
         content: "";
         transition: 300ms ease;
         display: block;
         position: absolute;
         margin: auto;
-        left: 0; right: 0;
-        top: auto; bottom: 0;
-
+        left: 0;
+        right: 0;
+        top: auto;
+        bottom: 0;
       }
 
       &::before {
         content: "";
-        transition: 300ms ease;  
-        
+        transition: 300ms ease;
+
         height: 3px;
         $color: lighten($color-secundario, 20);
         $color: rgba($color, 0.4);
@@ -178,7 +183,6 @@
 
       padding: 2px 0;
     }
-
   }
 
   // Radio Button
@@ -204,7 +208,7 @@
     }
 
     &:hover {
-      &:not(.group--options-selected)  {
+      &:not(.group--options-selected) {
         background-color: rgba($color-secundario, 0.2);
       }
     }
@@ -216,7 +220,6 @@
     padding: 0 20px;
 
     &:not(:first-of-type) {
-      
       @media screen and (min-width: 420px) {
         margin-left: 10px;
       }
@@ -238,7 +241,6 @@
     span {
       transition: 300ms ease;
     }
-
   }
 }
 
@@ -246,7 +248,7 @@
   & ~ .checked {
     display: none;
   }
-  
+
   &:checked ~ .unchecked {
     display: none;
   }
@@ -254,5 +256,4 @@
   &:checked ~ .checked {
     display: inline;
   }
-
 }

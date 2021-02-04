@@ -14,7 +14,8 @@ $min-height: 100vh !default;
   border: 0;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 
@@ -53,7 +54,8 @@ a {
   -moz-box-sizing: $box-sizing;
   box-sizing: $box-sizing;
 
-  &::before, &::after {
+  &::before,
+  &::after {
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
     box-sizing: inherit;
@@ -91,7 +93,8 @@ hr {
 }
 
 // pre y code
-pre, code {
+pre,
+code {
   word-wrap: break-word;
   white-space: pre-wrap;
   background-color: lighten($color-base, 56);
@@ -109,7 +112,7 @@ pre, code {
   &--width {
     min-width: $min-width;
   }
-  
+
   &--height {
     min-height: $min-height;
   }
@@ -151,19 +154,22 @@ pre, code {
 }
 
 // Predeterminado
-.default, .predeterminado {
+.default,
+.predeterminado {
   width: calc(#{$width} - 10px);
   max-width: $max-width;
-  
+
   &:not(hr):not([class*="contacto"]) {
     margin: 0 auto;
   }
 }
 
 .line {
-  &--default, &--predeterminado {
+  &--default,
+  &--predeterminado {
     margin: 20px auto;
-    border-left: 0; border-right: 0;
+    border-left: 0;
+    border-right: 0;
     border-top: 0;
     height: 0;
   }
@@ -214,36 +220,40 @@ pre, code {
 
 // Tamannos de fuentes:
 .t {
-  &--small, &--pequenno {
+  &--small,
+  &--pequenno {
     font-size: 0.85rem;
   }
 
-  &--big, &--grande {
+  &--big,
+  &--grande {
     font-size: 1.2rem;
   }
 
-  &--semi-bold, &--semi-negrita {
+  &--semi-bold,
+  &--semi-negrita {
     font-weight: 600;
   }
 
-  &--bold, &--negrita {
+  &--bold,
+  &--negrita {
     font-weight: 800;
   }
-  
-  &--italic, &--cursiva {
+
+  &--italic,
+  &--cursiva {
     font-style: italic;
   }
 
-  &--oblique, &--oblicua {
+  &--oblique,
+  &--oblicua {
     font-style: oblique;
   }
 
   @for $i from 1 through 10 {
-
     &--#{$i} {
       font-size: $i + rem;
     }
-
   }
 }
 
@@ -273,7 +283,6 @@ pre, code {
 }
 
 .centrado {
-
   &--h {
     margin: 0 auto;
   }

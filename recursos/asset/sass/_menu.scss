@@ -5,18 +5,17 @@
 
 .menu {
   &-horizontal {
-
     @media screen and (max-width: 1023px) {
       display: none;
       opacity: 0;
     }
-    
+
     min-height: $menu-height;
     color: white;
 
     display: flex;
     justify-content: center;
-    list-style:none;
+    list-style: none;
 
     &--item,
     &--enlace {
@@ -31,8 +30,10 @@
           content: "";
           display: block;
           margin: auto;
-          left: 0; right: auto;
-          top: 0; bottom: 0;
+          left: 0;
+          right: auto;
+          top: 0;
+          bottom: 0;
           height: 25px;
           // border-left: 1px solid rgba($color-base, 0.2);
         }
@@ -56,16 +57,18 @@
         size: 0.9rem;
         weight: 400;
       }
-      
+
       text-transform: uppercase;
-      
+
       &::before {
         content: "";
         display: block;
         position: absolute;
         margin: auto;
-        left: 0; right: 0;
-        top: 0; bottom: 25%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 25%;
         width: calc(100% - (var(--padding) * 2));
         transition: 300ms ease;
         transform: rotateY(30deg);
@@ -90,8 +93,9 @@
           border-bottom-color: $color;
         }
       }
-      
-      &:hover, &:focus {
+
+      &:hover,
+      &:focus {
         &::before {
           opacity: 1;
           transform: rotateY(0deg);
@@ -130,9 +134,7 @@
       @media screen and (max-width: 1023px) {
         opacity: 1;
         display: block;
-
       }
-
     }
 
     // Lista:
@@ -153,7 +155,7 @@
 
       display: flex;
       padding: 10px;
-      
+
       &:hover {
         text-decoration: none;
         color: white;
@@ -177,9 +179,10 @@
 .logo--fondo {
   position: absolute;
   margin: auto;
-  left: 45%; right: 0;
-  top: 0; bottom: 0;
-
+  left: 45%;
+  right: 0;
+  top: 0;
+  bottom: 0;
 
   background-image: linear-gradient(80deg, transparent 17%, $logo-fondo 30%);
 }
@@ -189,11 +192,13 @@
   &--movil {
     position: fixed;
     margin: auto;
-    left: 0; right: 0;
-    top: 0; bottom: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: auto;
     max-width: $max-width;
     transition: 300ms ease opacity;
-    
+
     // $width-layer: calc(#{$width} - 20px);
     width: $width;
     background-color: rgba($color-base, 0.7);
@@ -213,10 +218,9 @@
     $color: lighten($color-base, 5);
     background-color: transparent;
     color: white;
-    min-width:auto;
+    min-width: auto;
     border-radius: 0;
     overflow: hidden;
-
 
     &:hover {
       $color: lighten($color, 5);
@@ -224,12 +228,13 @@
       color: white;
     }
 
-   &:focus {
-     outline: medium none !important;
-   } 
+    &:focus {
+      outline: medium none !important;
+    }
   }
 }
 
-.fas, .far {
+.fas,
+.far {
   padding-right: 5px;
 }
