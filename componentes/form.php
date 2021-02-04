@@ -36,7 +36,7 @@ $form = <<<HTML
       </label>
     </div>
     
-    <div class="google-captcha">$gcaptcha</div>
+    <!-- <div class="google-captcha">$gcaptcha</div> -->
 
     <div class="group--button">
       <button type="submit" class="btn btn--submit" id="btnInvitacion">Enviar</button>
