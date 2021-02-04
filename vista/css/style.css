@@ -10,6 +10,8 @@ body {
   font-size: 1rem;
   color: #606060;
   background-color: #ede9f8;
+  -webkit-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {

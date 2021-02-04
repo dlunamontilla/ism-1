@@ -29,6 +29,9 @@ body {
   $color: desaturate($color-base, 50);
   $color: lighten($color, 20);
   background-color: lighten($color, 65);
+
+  -webkit-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
